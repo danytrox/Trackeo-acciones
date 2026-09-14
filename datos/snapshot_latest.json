@@ -1,0 +1,239 @@
+{
+  "fecha": "2026-09-14",
+  "instrumentos": {
+    "SNDK": {
+      "nombre": "SanDisk",
+      "precio": 1551.99,
+      "moneda": "USD",
+      "ytd_pct": 463.87,
+      "cambio_dia_pct": -4.981,
+      "dist_max52_pct": -34.08,
+      "error": null
+    },
+    "DELL": {
+      "nombre": "Dell Technologies",
+      "precio": 534.08,
+      "moneda": "USD",
+      "ytd_pct": 317.9,
+      "cambio_dia_pct": -5.854,
+      "dist_max52_pct": -5.93,
+      "error": null
+    },
+    "MU": {
+      "nombre": "Micron",
+      "precio": 924.03,
+      "moneda": "USD",
+      "ytd_pct": 192.95,
+      "cambio_dia_pct": -5.253,
+      "dist_max52_pct": -26.37,
+      "error": null
+    },
+    "INTC": {
+      "nombre": "Intel",
+      "precio": 97.19,
+      "moneda": "USD",
+      "ytd_pct": 146.8,
+      "cambio_dia_pct": -5.586,
+      "dist_max52_pct": -31.72,
+      "error": null
+    },
+    "MRVL": {
+      "nombre": "Marvell",
+      "precio": 218.82,
+      "moneda": "USD",
+      "ytd_pct": 144.79,
+      "cambio_dia_pct": -7.319,
+      "dist_max52_pct": -33.67,
+      "error": null
+    },
+    "AMD": {
+      "nombre": "AMD",
+      "precio": 493.41,
+      "moneda": "USD",
+      "ytd_pct": 120.79,
+      "cambio_dia_pct": -4.402,
+      "dist_max52_pct": -15.62,
+      "error": null
+    },
+    "WDC": {
+      "nombre": "Western Digital",
+      "precio": 426.94,
+      "moneda": "USD",
+      "ytd_pct": 127.46,
+      "cambio_dia_pct": -4.526,
+      "dist_max52_pct": -46.62,
+      "error": null
+    },
+    "ARM": {
+      "nombre": "Arm Holdings",
+      "precio": 239.01,
+      "moneda": "USD",
+      "ytd_pct": 108.32,
+      "cambio_dia_pct": -9.736,
+      "dist_max52_pct": -47.2,
+      "error": null
+    },
+    "STX": {
+      "nombre": "Seagate",
+      "precio": 805.55,
+      "moneda": "USD",
+      "ytd_pct": 180.15,
+      "cambio_dia_pct": -2.966,
+      "dist_max52_pct": -29.65,
+      "error": null
+    },
+    "CORT": {
+      "nombre": "Corcept Therapeutics",
+      "precio": 111.8,
+      "moneda": "USD",
+      "ytd_pct": 192.67,
+      "cambio_dia_pct": -0.878,
+      "dist_max52_pct": -11.54,
+      "error": null
+    },
+    "SOXX": {
+      "nombre": "iShares Semiconductor",
+      "precio": 497.4,
+      "moneda": "USD",
+      "ytd_pct": 58.56,
+      "cambio_dia_pct": -5.629,
+      "dist_max52_pct": -24.17,
+      "error": null
+    },
+    "SMH": {
+      "nombre": "VanEck Semiconductor",
+      "precio": 541.5,
+      "moneda": "USD",
+      "ytd_pct": 45.06,
+      "cambio_dia_pct": -4.754,
+      "dist_max52_pct": -19.4,
+      "error": null
+    },
+    "PSI": {
+      "nombre": "Invesco Semiconductors",
+      "precio": 128.72,
+      "moneda": "USD",
+      "ytd_pct": 55.33,
+      "cambio_dia_pct": -7.86,
+      "dist_max52_pct": -31.98,
+      "error": null
+    },
+    "AIS": {
+      "nombre": "AI Supercycle ETF",
+      "precio": 66.26,
+      "moneda": "USD",
+      "ytd_pct": 67.96,
+      "cambio_dia_pct": -7.406,
+      "dist_max52_pct": -25.38,
+      "error": null
+    },
+    "XLE": {
+      "nombre": "Energy Select SPDR",
+      "precio": 64.53,
+      "moneda": "USD",
+      "ytd_pct": 41.36,
+      "cambio_dia_pct": -0.936,
+      "dist_max52_pct": -2.48,
+      "error": null
+    },
+    "VDE": {
+      "nombre": "Vanguard Energy",
+      "precio": 181.57,
+      "moneda": "USD",
+      "ytd_pct": 41.12,
+      "cambio_dia_pct": -1.111,
+      "dist_max52_pct": -2.5,
+      "error": null
+    },
+    "USO": {
+      "nombre": "United States Oil Fund",
+      "precio": 156.66,
+      "moneda": "USD",
+      "ytd_pct": 127.18,
+      "cambio_dia_pct": 1.136,
+      "dist_max52_pct": -2.25,
+      "error": null
+    },
+    "EWY": {
+      "nombre": "iShares MSCI Corea",
+      "precio": 176.22,
+      "moneda": "USD",
+      "ytd_pct": 72.39,
+      "cambio_dia_pct": -6.624,
+      "dist_max52_pct": -20.22,
+      "error": null
+    },
+    "EWT": {
+      "nombre": "iShares MSCI Taiwán",
+      "precio": 107.21,
+      "moneda": "USD",
+      "ytd_pct": 65.52,
+      "cambio_dia_pct": -3.336,
+      "dist_max52_pct": -4.94,
+      "error": null
+    },
+    "DBC": {
+      "nombre": "Invesco DB Commodity",
+      "precio": 33.15,
+      "moneda": "USD",
+      "ytd_pct": 48.06,
+      "cambio_dia_pct": -0.03,
+      "dist_max52_pct": -1.43,
+      "error": null
+    },
+    "XBI": {
+      "nombre": "SPDR Biotech",
+      "precio": 157.6,
+      "moneda": "USD",
+      "ytd_pct": 29.69,
+      "cambio_dia_pct": 0.896,
+      "dist_max52_pct": -7.23,
+      "error": null
+    },
+    "DECO": {
+      "nombre": "Galaxy Digital Assets",
+      "precio": 72.161,
+      "moneda": "USD",
+      "ytd_pct": 48.11,
+      "cambio_dia_pct": -2.577,
+      "dist_max52_pct": -14.85,
+      "error": null
+    },
+    "CHILE.SN": {
+      "nombre": "Banco de Chile",
+      "precio": 198.69,
+      "moneda": "CLP",
+      "ytd_pct": 14.75,
+      "cambio_dia_pct": 1.218,
+      "dist_max52_pct": -0.99,
+      "error": null
+    },
+    "LTM.SN": {
+      "nombre": "Latam Airlines",
+      "precio": 24.39,
+      "moneda": "CLP",
+      "ytd_pct": -1.05,
+      "cambio_dia_pct": 1.498,
+      "dist_max52_pct": -18.7,
+      "error": null
+    },
+    "BSANTANDER.SN": {
+      "nombre": "Santander Chile",
+      "precio": 83.5,
+      "moneda": "CLP",
+      "ytd_pct": 17.72,
+      "cambio_dia_pct": 1.151,
+      "dist_max52_pct": -0.29,
+      "error": null
+    },
+    "^IPSA": {
+      "nombre": "IPSA (índice)",
+      "precio": 10887.72,
+      "moneda": "CLP",
+      "ytd_pct": null,
+      "cambio_dia_pct": -0.545,
+      "dist_max52_pct": -0.54,
+      "error": null
+    }
+  }
+}
