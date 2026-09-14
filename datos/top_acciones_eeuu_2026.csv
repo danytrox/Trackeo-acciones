@@ -1,0 +1,14 @@
+ticker,nombre,sector,retorno_ytd_2026,market_cap,fuente
+SNDK,SanDisk Corporation,Memoria flash/semis,+400% a +614%,~USD 69B,chartrow/ycharts/investopedia
+DELL,Dell Technologies,Servidores AI/IT,+234% a +260%,~USD 273B,chartrow/ycharts
+MU,Micron Technology,Memoria DRAM/NAND,+200% a +240%,~USD 1.1T,ycharts/investopedia
+CORT,Corcept Therapeutics,Salud/biotec,+218%,-,chartrow
+STX,Seagate Technology,Almacenamiento,+195%,-,chartrow
+INTC,Intel,Semiconductores,+150% a +210%,~USD 576B,ycharts
+ARM,Arm Holdings,Diseño de chips (CPU),+158%,-,chartrow
+DOCN,DigitalOcean,Cloud,+158%,-,chartrow
+MRVL,Marvell Technology,Semis infraestructura AI,+157%,-,chartrow
+AMD,Advanced Micro Devices,CPU/GPU,+125%,~USD 789-842B,chartrow/ycharts
+WDC,Western Digital,Almacenamiento/memoria,+183% a +208%,~USD 183B,ycharts
+FLEX,Flex Ltd,Manufactura electrónica,+149%,~USD 55B,ycharts
+IRDM,Iridium Communications,Satelital/telecom,+191% a +198%,~USD 5.5B,ycharts/csimarket

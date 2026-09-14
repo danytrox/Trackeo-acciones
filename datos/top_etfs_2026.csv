@@ -1,0 +1,14 @@
+ticker,nombre,exposicion,retorno_ytd_2026,gasto,fuente
+USO,United States Oil Fund,Petróleo WTI (futuros),+103% a +111%,0.60%,etf.com/chartrow
+PSI,Invesco Semiconductors ETF,Semiconductores,+99.6%,0.56%,myinvestacademy
+AIS,VistaShares AI Supercycle ETF,Infraestructura IA,+97.6%,0.75%,myinvestacademy
+EWY,iShares MSCI South Korea,Corea del Sur,+90% a +95%,0.59%,chartrow
+SOXX,iShares Semiconductor ETF,Semiconductores,+75.7%,0.33%,chartrow
+EWT,iShares MSCI Taiwan,Taiwán (tech),+68% a +75%,0.59%,chartrow
+SMH,VanEck Semiconductor ETF,Semiconductores,+59.3%,0.35%,chartrow
+XLE,Energy Select Sector SPDR,Energía,+46.9%,0.08%,chartrow
+VDE,Vanguard Energy ETF,Energía,+46.5%,0.09%,chartrow
+DBC,Invesco DB Commodity,Commodities diversificadas,+42.8% a +44.9%,0.89%,chartrow/etf.com
+PDBC,Invesco Optimum Yield Commodity,Commodities (sin K-1),+43.8%,0.59%,etf.com
+XBI,SPDR S&P Biotech,Biotecnología,+33%,0.35%,chartrow
+DECO,Galaxy Digital Asset Ecosystem,Activos digitales/blockchain,+79.6%,-,etfdb
