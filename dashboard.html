@@ -56,6 +56,7 @@ tailwind.config = {
 <nav class="max-w-6xl mx-auto px-5 pt-5 flex gap-2">
   <button id="btnAnalisis" onclick="showTab('analisis')" class="tabbtn active px-4 py-2 rounded-lg border border-line bg-panel text-white font-semibold text-sm">📊 Análisis</button>
   <button id="btnVivo" onclick="showTab('vivo')" class="tabbtn px-4 py-2 rounded-lg border border-line bg-ink text-slate-300 font-semibold text-sm">🔴 Mercado en vivo</button>
+  <a href="/portafolios.html" class="px-4 py-2 rounded-lg border border-danger/40 bg-danger/10 text-danger font-semibold text-sm hover:bg-danger/20 transition">🔥 Portafolios agresivos</a>
 </nav>
 
 <main class="max-w-6xl mx-auto px-5 py-8">
@@ -379,6 +380,16 @@ const INSTRUMENTS = [
   {s:'ARM',  cat:'acción', theme:'Diseño CPU',          bear:-18, base:12,  bull:30},
   {s:'STX',  cat:'acción', theme:'HDD',                 bear:-20, base:10,  bull:28},
   {s:'CORT', cat:'acción', theme:'Biotec',              bear:-15, base:8,   bull:20},
+  // cadena de procesadores (fundición, equipos, EDA, diseño)
+  {s:'TSM',  cat:'acción', theme:'Fundición (TSMC)',     bear:-5,  base:18,  bull:35},
+  {s:'ASML', cat:'acción', theme:'Litografía EUV',       bear:-10, base:15,  bull:30},
+  {s:'KLAC', cat:'acción', theme:'Metrología',           bear:-8,  base:12,  bull:25},
+  {s:'AMAT', cat:'acción', theme:'Deposición (WFE)',     bear:-8,  base:10,  bull:22},
+  {s:'LRCX', cat:'acción', theme:'Etch (WFE)',           bear:-8,  base:10,  bull:22},
+  {s:'SNPS', cat:'acción', theme:'EDA',                  bear:-5,  base:10,  bull:20},
+  {s:'CDNS', cat:'acción', theme:'EDA',                  bear:-5,  base:10,  bull:20},
+  {s:'NVDA', cat:'acción', theme:'GPU/AI',               bear:-25, base:5,   bull:25},
+  {s:'QCOM', cat:'acción', theme:'CPU móvil/PC',         bear:-12, base:8,   bull:18},
   // ETFs
   {s:'SOXX', cat:'ETF',    theme:'Semis',               bear:-15, base:10,  bull:25},
   {s:'SMH',  cat:'ETF',    theme:'Semis',               bear:-15, base:10,  bull:25},

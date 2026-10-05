@@ -16,9 +16,11 @@ acciones en [Racional](https://racional.cl).
 - **Pestaña "Análisis"**: rankings de los mayores ganadores YTD (acciones y ETFs de EE.UU.),
   contexto del IPSA chileno, tres carteras modelo (conservadora / moderada / agresiva) y
   escenarios especulativos Bear/Base/Bull.
-- **Pestaña "Mercado en vivo"**: cotizaciones en tiempo real de 26 instrumentos (precio, cambio
+- **Pestaña "Mercado en vivo"**: cotizaciones en tiempo real de 35 instrumentos (precio, cambio
   del día, retorno YTD calculado, distancia desde el máximo de 52 semanas y posición en el
   rango de 52 semanas), con auto-refresco cada 60 s.
+- **Página aparte "Portafolios agresivos"** (`portafolios.html`): un manifiesto del mercado
+  (por qué está donde está) y 4 portafolios de máximo riesgo con rangos Bear/Base/Bull.
 - **Sin API keys ni dependencias de terceros** en el backend: solo Python estándar.
 
 ---
@@ -41,6 +43,7 @@ No hay `package.json`, bundler ni build step. El backend no requiere `pip instal
 ```
 inversion-2026/
 ├── dashboard.html          # SPA con las dos pestañas (autocontenida)
+├── portafolios.html        # Portafolios agresivos + manifiesto del mercado
 ├── server.py               # Servidor HTTP + proxy a Yahoo Finance
 ├── README.md
 ├── .gitignore
@@ -53,7 +56,8 @@ inversion-2026/
 ├── 03_etfs.md
 ├── 04_chile_ipsa.md
 ├── 05_estrategia_3a6meses.md
-└── 06_riesgos_disclaimer.md
+├── 06_riesgos_disclaimer.md
+└── 07_procesadores_cadena.md
 ```
 
 - `dashboard.html` es el frontend completo: lógica de pestañas, gráficos y `fetch` a `/api/quotes`.
@@ -163,6 +167,7 @@ requiere cookie + crumb y devuelve `401` sin autenticación.
 El listado está definido en el array `INSTRUMENTS` dentro de `dashboard.html`.
 
 - **Acciones EE.UU.**: `SNDK, DELL, MU, INTC, MRVL, AMD, WDC, ARM, STX, CORT`
+- **Cadena de procesadores**: `TSM, ASML, KLAC, AMAT, LRCX, SNPS, CDNS, NVDA, QCOM`
 - **ETFs**: `SOXX, SMH, PSI, AIS, XLE, VDE, USO, EWY, EWT, DBC, XBI, DECO`
 - **Chile (CLP, sufijo `.SN`)**: `CHILE.SN, LTM.SN, BSANTANDER.SN`
 - **Índice**: `^IPSA` (debe ir URL-encoded como `%5EIPSA`)

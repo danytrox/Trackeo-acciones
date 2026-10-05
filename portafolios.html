@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolios Agresivos 2026 · Manifiesto del Mercado</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter','system-ui','sans-serif'] },
+      colors: {
+        ink: '#0b1220', panel: '#101a2e', panel2: '#16223a', line: '#223252',
+        accent: '#34d399', accent2: '#22d3ee', warn: '#fbbf24', danger: '#fb7185',
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .card { background: linear-gradient(180deg,#101a2e 0%,#0d1526 100%); border:1px solid #223252; border-radius:1rem; }
+  .glow { box-shadow: 0 0 0 1px rgba(52,211,153,.15), 0 20px 60px -20px rgba(52,211,153,.25); }
+  .num { font-variant-numeric: tabular-nums; }
+  .ticker { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.02em; }
+  .decl { font-size: 3.5rem; line-height: 1; font-weight: 900; }
+  @media (min-width: 1024px) { .decl { font-size: 5rem; } }
+</style>
+</head>
+<body class="bg-ink text-slate-200 antialiased min-h-screen">
+
+<!-- ===== HEADER ===== -->
+<header class="border-b border-line sticky top-0 z-40 bg-ink/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-danger to-warn flex items-center justify-center font-extrabold text-ink text-lg">A</div>
+      <div>
+        <h1 class="font-bold text-white leading-tight">Portafolios Agresivos</h1>
+        <p class="text-xs text-slate-400">Manifiesto del mercado + apuestas de máximo riesgo · 2026</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="/dashboard.html" class="px-3 py-1.5 rounded-lg border border-line bg-panel text-slate-300 text-xs font-semibold hover:border-accent hover:text-white transition">← Radar principal</a>
+      <span class="hidden sm:inline px-3 py-1 rounded-full bg-danger/10 text-danger border border-danger/30 text-xs">Riesgo extremo</span>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-5 py-10 space-y-14">
+
+  <!-- ============================================================ -->
+  <!-- MANIFIESTO -->
+  <!-- ============================================================ -->
+  <section>
+    <div class="mb-6">
+      <p class="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Manifiesto · septiembre 2026</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Por qué el mercado está<br>exactamente donde está</h2>
+    </div>
+
+    <div class="space-y-6">
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-danger shrink-0">01</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Esto no es una burbuja de software. Es una guerra por infraestructura física.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            En 2026 los chips de IA generativa se acercarán a <span class="text-white font-semibold">USD 500.000M</span> en ventas — cerca de la
+            <span class="text-white font-semibold">mitad de todo el mercado global de semiconductores</span>. No es el chiste de las puntocom:
+            son fábricas, máquinas de litografía, reactores de plasma y gigavatios de electricidad. El dinero no compra una app;
+            compra <span class="text-accent font-semibold">capacidad física que tarda años en construirse</span>. Eso cambia la naturaleza del ciclo:
+            no se apaga con un tuit, se apaga con una fábrica terminada o cancelada.
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-warn shrink-0">02</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">El cuello de botella manda, y el cuello de botella se llama CoWoS.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            El diseño de chips es fácil; <span class="text-white font-semibold">fabricarlos y empaquetarlos es la restricción</span>. TSMC controla ~90% de los
+            nodos sub-5nm y el <span class="text-warn font-semibold">packaging avanzado CoWoS es el estrangulamiento #1</span> del suministro de aceleradores de IA
+            (rumbo a ~130.000 wafers/mes a fin de 2026, todo vendido por adelantado). ASML fabrica <span class="text-white font-semibold">el 100% de las máquinas
+            EUV</span> del planeta. La lección es brutal y simple: <span class="text-accent font-semibold">quien controla el cuello de botella captura el margen</span>,
+            no quien tiene la mejor idea. Por eso los "picos y palas" (equipos, fundición, EDA) le venden a todos y ganan sin importar
+            si gana Intel, AMD o Nvidia.
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-accent shrink-0">03</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">La memoria se acabó, y no vuelve hasta 2028.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Samsung lo dijo sin eufemismos: <span class="text-white font-semibold">"memory crunch" hasta 2028</span>. DRAM y NAND suben de precio porque la demanda
+            de centros de datos se come toda la capacidad. Eso explica lo que parece inexplicable: <span class="text-accent font-semibold">SanDisk +500%</span>,
+            <span class="text-accent font-semibold">Micron +234%</span>, Western Digital +141%. No es especulación desbocada — es un desequilibrio
+            real de oferta y demanda en un mercado donde <span class="text-white font-semibold">los productos son commodities con precios cíclicos</span>.
+            El ciclo de memoria es el motor silencioso de todo este mercado.
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-accent2 shrink-0">04</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">El rally ya discriminó: los diseñadores corrieron, los proveedores se quedaron.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Mira los retornos reales al 28-sep: <span class="text-accent font-semibold">Intel +194%, AMD +172%, Marvell +182%</span> — los diseñadores explotaron con
+            la narrativa. Pero sus proveedores no los siguieron: <span class="text-white font-semibold">TSMC +42%, ASML +52%, KLA +48%</span>, y el software de
+            diseño <span class="text-danger font-semibold">Synopsys cayó -13%</span>. Varios proveedores ya corrigieron fuerte (KLA -38% desde su máximo,
+            Applied Materials -34%, Lam -28%), mientras AMD está a solo -5% de su techo. <span class="text-warn font-semibold">Esa asimetría es la oportunidad</span>:
+            si la tesis es real, el dinero todavía no ha pagado el "foso".
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-danger shrink-0">05</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">El riesgo no es que la IA falle. Es que tarde demasiado en pagar.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Los chips ya están encargados y en backlog; los próximos 12 meses son sólidos. El peligro está en
+            <span class="text-white font-semibold">2027-2028</span>: si la monetización de la IA tarda más de lo que el mercado asume, los centros de datos
+            se cancelan o postergan, y el ciclo revierte con la misma violencia con la que subió. El índice de semiconductores
+            (SOX) <span class="text-danger font-semibold">ya cayó -20% desde junio</span> — esa fue la advertencia. Un portafolio agresivo en 2026 es una
+            apuesta de fe con fecha de vencimiento, no una convicción eterna. Por eso cada portafolio de abajo tiene
+            <span class="text-white font-semibold">reglas de salida duras</span>.
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-6 sm:p-8 flex gap-5">
+        <div class="decl text-purple-400 shrink-0">06</div>
+        <div>
+          <h3 class="text-xl font-bold text-white">La geopolítica no es un riesgo: es un multiplicador de valor.</h3>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Taiwán concentra la fabricación más avanzada del planeta. Las licencias de exportación de ASML son una palanca
+            geopolítica de EE.UU. y Países Bajos. La CHIPS Act y sus secuelas están rehaciendo la geografía de la industria.
+            Cada escalada de tensión no destruye a TSMC ni a ASML — <span class="text-white font-semibold">los hace más estratégicos, más escasos,
+            más valiosos</span>. En un mundo fragmentado, el que tiene el monopolio del cuello de botella se vuelve imprescindible
+            para ambos bandos. Esa es la prima que este mercado ya está empezando a pagar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card glow p-6 sm:p-8 mt-6 border-accent/30">
+      <p class="text-lg text-slate-100 font-semibold leading-relaxed">
+        <span class="text-accent">La síntesis:</span> el mercado de 2026 no es irracional, es <span class="text-white">estructural</span>.
+        Hay escasez real de memoria, un cuello de botella real en la fabricación y una demanda real de IA. Pero el precio ya
+        descontó todo eso en los nombres que más subieron. La única forma inteligente de ser agresivo es serlo
+        <span class="text-warn">donde el precio todavía no llegó</span> — el foso, no el hype.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- PORTAFOLIOS AGRESIVOS -->
+  <!-- ============================================================ -->
+  <section>
+    <p class="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Apuestas de máximo riesgo</p>
+    <h2 class="text-3xl font-extrabold text-white tracking-tight">Cuatro portafolios agresivos</h2>
+    <p class="mt-3 text-slate-300 max-w-3xl leading-relaxed">
+      Construidos con los mismos instrumentos y escenarios del radar principal. Cada uno responde a una tesis distinta.
+      Los rangos Bear/Base/Bull son el <span class="text-white font-semibold">promedio ponderado</span> de los escenarios individuales de cada posición,
+      no un pronóstico. Son la versión "todo al rojo" del radar: solo si toleras ver -30% en el camino.
+    </p>
+  </section>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+    <!-- Portfolio 1 -->
+    <div class="card p-6">
+      <div class="flex items-start justify-between">
+        <h3 class="text-lg font-bold text-white">🧠 #1 · Apocalipsis de memoria</h3>
+        <span class="px-2 py-0.5 rounded bg-accent/10 text-accent text-xs font-semibold">Memoria</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-1 mb-4">La tesis más simple del año: la memoria está en superciclo de escasez hasta 2028. Concentración pura en DRAM/NAND/almacenamiento.</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-[200px]"><canvas id="dona1"></canvas></div>
+        <div class="text-sm space-y-2">
+          <div class="flex justify-between"><span class="ticker text-white">SNDK</span><span class="num">25%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">MU</span><span class="num">25%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">DELL</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">WDC</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">STX</span><span class="num">10%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">SOXX</span><span class="num">10%</span></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 mt-5 text-center">
+        <div class="rounded-lg bg-danger/10 border border-danger/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bear</p><p class="num font-bold text-danger">-22%</p></div>
+        <div class="rounded-lg bg-warn/10 border border-warn/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Base</p><p class="num font-bold text-warn">+6%</p></div>
+        <div class="rounded-lg bg-accent/10 border border-accent/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bull</p><p class="num font-bold text-accent">+26%</p></div>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">Riesgo máximo: los nombres de memoria ya subieron +141% a +522% y son los más castigados en cada corrección.</p>
+    </div>
+
+    <!-- Portfolio 2 -->
+    <div class="card p-6 ring-1 ring-accent/40 glow">
+      <div class="flex items-start justify-between">
+        <h3 class="text-lg font-bold text-white">⚙️ #2 · El foso (procesadores) <span class="text-accent text-xs ml-1">★ recomendado</span></h3>
+        <span class="px-2 py-0.5 rounded bg-accent2/10 text-accent2 text-xs font-semibold">Equipos/fundición</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-1 mb-4">La tesis del análisis de procesadores: compra a los que hacen POSIBLES los chips, no a los que los diseñan. Menos extendido, mejor punto de entrada.</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-[200px]"><canvas id="dona2"></canvas></div>
+        <div class="text-sm space-y-2">
+          <div class="flex justify-between"><span class="ticker text-white">ASML</span><span class="num">25%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">KLAC</span><span class="num">25%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">TSM</span><span class="num">25%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">AMAT</span><span class="num">12,5%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">LRCX</span><span class="num">12,5%</span></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 mt-5 text-center">
+        <div class="rounded-lg bg-danger/10 border border-danger/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bear</p><p class="num font-bold text-danger">-8%</p></div>
+        <div class="rounded-lg bg-warn/10 border border-warn/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Base</p><p class="num font-bold text-warn">+13%</p></div>
+        <div class="rounded-lg bg-accent/10 border border-accent/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bull</p><p class="num font-bold text-accent">+27%</p></div>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">El mejor riesgo/recompensa de los cuatro: monopolios estructurales, ya corrigieron -11% a -38% desde máximos, y el Bear es el más contenido (-8%).</p>
+    </div>
+
+    <!-- Portfolio 3 -->
+    <div class="card p-6">
+      <div class="flex items-start justify-between">
+        <h3 class="text-lg font-bold text-white">🚀 #3 · Momentum extremo</h3>
+        <span class="px-2 py-0.5 rounded bg-purple-400/10 text-purple-400 text-xs font-semibold">Diseñadores</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-1 mb-4">Perseguir a los que más subieron en 2026. Máximo upside si el rally sigue; la forma más rápida de perder si revierte.</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-[200px]"><canvas id="dona3"></canvas></div>
+        <div class="text-sm space-y-2">
+          <div class="flex justify-between"><span class="ticker text-white">SNDK</span><span class="num">20%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">DELL</span><span class="num">20%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">MU</span><span class="num">20%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">INTC</span><span class="num">20%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">MRVL</span><span class="num">20%</span></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 mt-5 text-center">
+        <div class="rounded-lg bg-danger/10 border border-danger/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bear</p><p class="num font-bold text-danger">-23%</p></div>
+        <div class="rounded-lg bg-warn/10 border border-warn/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Base</p><p class="num font-bold text-warn">+7%</p></div>
+        <div class="rounded-lg bg-accent/10 border border-accent/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bull</p><p class="num font-bold text-accent">+29%</p></div>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">Pura especulación de momentum. Entrar a +157% a +522% de YTD es apuesta, no inversión. Solo una fracción pequeña del capital.</p>
+    </div>
+
+    <!-- Portfolio 4 -->
+    <div class="card p-6">
+      <div class="flex items-start justify-between">
+        <h3 class="text-lg font-bold text-white">🤖 #4 · IA total (toda la cadena)</h3>
+        <span class="px-2 py-0.5 rounded bg-cyan-400/10 text-cyan-400 text-xs font-semibold">Diversificado IA</span>
+      </div>
+      <p class="text-sm text-slate-400 mt-1 mb-4">Exposición a la IA en TODAS las capas: diseño, fundición, equipos y servidores. Agresivo pero sin apostar a un solo eslabón.</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-[200px]"><canvas id="dona4"></canvas></div>
+        <div class="text-sm space-y-1.5">
+          <div class="flex justify-between"><span class="ticker text-white">NVDA</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">DELL</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">ARM</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">TSM</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">MRVL</span><span class="num">15%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">ASML</span><span class="num">10%</span></div>
+          <div class="flex justify-between"><span class="ticker text-white">AIS</span><span class="num">15%</span></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 mt-5 text-center">
+        <div class="rounded-lg bg-danger/10 border border-danger/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bear</p><p class="num font-bold text-danger">-16%</p></div>
+        <div class="rounded-lg bg-warn/10 border border-warn/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Base</p><p class="num font-bold text-warn">+12%</p></div>
+        <div class="rounded-lg bg-accent/10 border border-accent/30 p-2"><p class="text-[10px] text-slate-400 uppercase">Bull</p><p class="num font-bold text-accent">+29%</p></div>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">El más equilibrado de los agresivos: diversifica por capa de la cadena. Buena opción si quieres el tema IA completo sin concentrarlo.</p>
+    </div>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COMPARATIVA -->
+  <!-- ============================================================ -->
+  <section>
+    <h3 class="text-2xl font-bold text-white mb-4">Comparativa rápida</h3>
+    <div class="card overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm min-w-[720px]">
+          <thead>
+            <tr class="text-slate-400 text-xs uppercase tracking-wider border-b border-line bg-panel2/50">
+              <th class="text-left py-3 px-4">Portafolio</th>
+              <th class="text-left py-3 px-4">Tesis</th>
+              <th class="text-right py-3 px-3 text-danger">Bear</th>
+              <th class="text-right py-3 px-3 text-warn">Base</th>
+              <th class="text-right py-3 px-3 text-accent">Bull</th>
+              <th class="text-left py-3 px-4">Para quién</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-line">
+            <tr class="hover:bg-panel2/40">
+              <td class="py-3 px-4 font-semibold text-white">#1 Apocalipsis de memoria</td>
+              <td class="py-3 px-4 text-slate-400">Escasez de DRAM/NAND</td>
+              <td class="py-3 px-3 text-right num text-danger">-22%</td>
+              <td class="py-3 px-3 text-right num text-warn">+6%</td>
+              <td class="py-3 px-3 text-right num text-accent">+26%</td>
+              <td class="py-3 px-4 text-slate-400">Máxima convicción en memoria, tolera caídas fuertes</td>
+            </tr>
+            <tr class="hover:bg-panel2/40 bg-accent/5">
+              <td class="py-3 px-4 font-semibold text-white">#2 El foso (procesadores) ★</td>
+              <td class="py-3 px-4 text-slate-400">Monopolios de fabricación/equipos</td>
+              <td class="py-3 px-3 text-right num text-danger">-8%</td>
+              <td class="py-3 px-3 text-right num text-warn">+13%</td>
+              <td class="py-3 px-3 text-right num text-accent">+27%</td>
+              <td class="py-3 px-4 text-slate-400">Mejor riesgo/recompensa; el Bear más contenido</td>
+            </tr>
+            <tr class="hover:bg-panel2/40">
+              <td class="py-3 px-4 font-semibold text-white">#3 Momentum extremo</td>
+              <td class="py-3 px-4 text-slate-400">Seguir a los ganadores de 2026</td>
+              <td class="py-3 px-3 text-right num text-danger">-23%</td>
+              <td class="py-3 px-3 text-right num text-warn">+7%</td>
+              <td class="py-3 px-3 text-right num text-accent">+29%</td>
+              <td class="py-3 px-4 text-slate-400">Máximo upside, especulación pura</td>
+            </tr>
+            <tr class="hover:bg-panel2/40">
+              <td class="py-3 px-4 font-semibold text-white">#4 IA total</td>
+              <td class="py-3 px-4 text-slate-400">IA en toda la cadena</td>
+              <td class="py-3 px-3 text-right num text-danger">-16%</td>
+              <td class="py-3 px-3 text-right num text-warn">+12%</td>
+              <td class="py-3 px-3 text-right num text-accent">+29%</td>
+              <td class="py-3 px-4 text-slate-400">Agresivo diversificado por capa</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- REGLAS -->
+  <!-- ============================================================ -->
+  <section>
+    <div class="card p-6">
+      <h3 class="text-xl font-bold text-white mb-4">Reglas de supervivencia para un portafolio agresivo</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <div class="p-4 rounded-xl bg-accent/10 border border-accent/30">
+          <p class="font-bold text-accent mb-1">Toma ganancia pronto</p>
+          <p class="text-slate-300">+15% a +25% en individuales → vende una parte. En un rally así, la ganancia no realizada no es tuya hasta que la vendes.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-danger/10 border border-danger/30">
+          <p class="font-bold text-danger mb-1">Corta sin piedad</p>
+          <p class="text-slate-300">-10% a -15% en individuales → sal. No promedies a la baja. En posiciones que subieron +150%, el promedio a la baja es un suicidio lento.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-warn/10 border border-warn/30">
+          <p class="font-bold text-warn mb-1">Horizonte duro</p>
+          <p class="text-slate-300">Al mes 6 revalúa: ¿sigue válida la tesis de escasez? Si el SOX vuelve a caer -20%, no es "oportunidad", es tu señal de salida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-line pt-6 pb-10">
+    <p class="text-xs text-slate-500 leading-relaxed">
+      <strong class="text-slate-400">Aviso:</strong> esta página es material informativo/educativo y <strong class="text-danger">NO es asesoría financiera</strong>.
+      Los portafolios son construcciones teóricas de máximo riesgo; los rangos Bear/Base/Bull son el promedio ponderado de escenarios
+      <span class="text-danger">especulativos</span> (no pronósticos). El rendimiento pasado no garantiza el futuro, y los líderes de 2026 ya subieron
+      +125% a +600%. Verifica precios vigentes en tu bróker y no inviertas dinero que no puedas permitirte perder.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = '#223252';
+Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+const green='#34d399', cyan='#22d3ee', amber='#fbbf24', red='#fb7185', blue='#60a5fa', purple='#a78bfa';
+
+function doughnut(id, labels, data, colors) {
+  new Chart(document.getElementById(id), {
+    type:'doughnut',
+    data:{ labels, datasets:[{ data, backgroundColor:colors, borderColor:'#101a2e', borderWidth:3, hoverOffset:6 }] },
+    options:{ maintainAspectRatio:false, cutout:'62%',
+      plugins:{ legend:{position:'bottom', labels:{color:'#cbd5e1', boxWidth:10, font:{size:10}}} } }
+  });
+}
+
+doughnut('dona1', ['SNDK','MU','DELL','WDC','STX','SOXX'], [25,25,15,15,10,10], [green,cyan,blue,purple,amber,'#475569']);
+doughnut('dona2', ['ASML','KLAC','TSM','AMAT','LRCX'], [25,25,25,12.5,12.5], [cyan,green,blue,purple,amber]);
+doughnut('dona3', ['SNDK','DELL','MU','INTC','MRVL'], [20,20,20,20,20], [green,blue,cyan,red,purple]);
+doughnut('dona4', ['NVDA','DELL','ARM','TSM','MRVL','ASML','AIS'], [15,15,15,15,15,10,15], [green,blue,purple,cyan,amber,red,'#60a5fa']);
+</script>
+</body>
+</html>
