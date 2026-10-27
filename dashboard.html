@@ -32,6 +32,7 @@ tailwind.config = {
   .tabbtn.active { background:#101a2e; color:#fff; border-color:#34d399; }
   .badge-cat { font-size:.65rem; padding:.1rem .5rem; border-radius:.4rem; font-weight:600; }
 </style>
+<link rel="stylesheet" href="modern.css?v=2">
 </head>
 <body class="bg-ink text-slate-200 antialiased min-h-screen">
 
@@ -39,14 +40,14 @@ tailwind.config = {
 <header class="border-b border-line sticky top-0 z-40 bg-ink/90 backdrop-blur">
   <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-accent2 flex items-center justify-center font-extrabold text-ink text-lg">R</div>
+      <div class="logo-mark w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-accent2 flex items-center justify-center font-extrabold text-ink text-lg">R</div>
       <div>
         <h1 class="font-bold text-white leading-tight">Radar Inversión Corto Plazo</h1>
         <p class="text-xs text-slate-400">Horizonte 3-6 meses · Capital USD 500-2.000 · vía Racional</p>
       </div>
     </div>
     <div class="hidden sm:flex items-center gap-2 text-xs">
-      <span class="px-3 py-1 rounded-full bg-warn/10 text-warn border border-warn/30">Datos sep 2026</span>
+      <span class="px-3 py-1 rounded-full bg-warn/10 text-warn border border-warn/30">Datos al <span id="headerSnapshotDate">—</span></span>
       <span class="px-3 py-1 rounded-full bg-danger/10 text-danger border border-danger/30">Especulación, no consejo</span>
     </div>
   </div>
@@ -54,10 +55,18 @@ tailwind.config = {
 
 <!-- ===== TABS NAV ===== -->
 <nav class="max-w-6xl mx-auto px-5 pt-5 flex gap-2">
-  <button id="btnAnalisis" onclick="showTab('analisis')" class="tabbtn active px-4 py-2 rounded-lg border border-line bg-panel text-white font-semibold text-sm">📊 Análisis</button>
-  <button id="btnVivo" onclick="showTab('vivo')" class="tabbtn px-4 py-2 rounded-lg border border-line bg-ink text-slate-300 font-semibold text-sm">🔴 Mercado en vivo</button>
+  <button id="btnAnalisis" aria-pressed="true" onclick="showTab('analisis')" class="tabbtn active px-4 py-2 rounded-lg border border-line bg-panel text-white font-semibold text-sm">📊 Análisis</button>
+  <button id="btnVivo" aria-pressed="false" onclick="showTab('vivo')" class="tabbtn px-4 py-2 rounded-lg border border-line bg-ink text-slate-300 font-semibold text-sm">🔴 Mercado en vivo</button>
   <a href="portafolios.html" class="px-4 py-2 rounded-lg border border-danger/40 bg-danger/10 text-danger font-semibold text-sm hover:bg-danger/20 transition">🔥 Portafolios agresivos</a>
 </nav>
+
+<div class="market-strip" aria-label="Movimientos del último snapshot">
+  <div class="market-strip-shell">
+    <div class="market-strip-label"><span class="market-live-dot" aria-hidden="true"></span> MERCADO <span id="tickerDate" class="market-strip-date">—</span></div>
+    <div class="market-ticker-window"><div id="marketTicker" class="market-ticker-track" aria-label="Variaciones diarias"><div class="market-ticker-group"><span class="market-ticker-item">Cargando snapshot…</span></div></div></div>
+    <a class="market-strip-link" href="#tabVivo" onclick="showTab('vivo')">Ver radar ↗</a>
+  </div>
+</div>
 
 <main class="max-w-6xl mx-auto px-5 py-8">
 
@@ -66,15 +75,28 @@ tailwind.config = {
 <!-- ============================================================ -->
 <section id="tabAnalisis" class="space-y-10">
 
-  <div>
-    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">¿Qué rindió mejor en 2026?</h2>
-    <p class="mt-3 text-slate-300 max-w-3xl leading-relaxed">
-      El tema dominante del año es el <span class="text-accent font-semibold">superciclo de semiconductores y memorias</span>
-      impulsado por IA, seguido del <span class="text-warn font-semibold">petróleo/energía</span>. Chile va más lento tras su récord de 2025.
-      Abajo: los ganadores con retorno YTD, y una proyección <span class="text-danger font-semibold">especulativa</span> de escenarios para 3-6 meses.
-      En la pestaña <span class="text-accent2 font-semibold">Mercado en vivo</span> consultas el estado actual con datos reales de Yahoo Finance.
-    </p>
-  </div>
+  <section class="radar-hero" aria-labelledby="heroTitle">
+    <div class="radar-hero-copy">
+      <div class="hero-eyebrow"><span class="market-live-dot" aria-hidden="true"></span> Radar de mercado · Snapshot <span id="snapshotDate">—</span></div>
+      <h2 id="heroTitle" class="hero-title">El pulso del mercado.<br><span>Sin ruido.</span></h2>
+      <p class="hero-description">Acciones, semiconductores y ETFs reunidos en un solo radar. Explora tendencias y escenarios de 3–6 meses; los datos del mercado se actualizan con el último snapshot semanal.</p>
+      <div class="hero-actions">
+        <button type="button" class="hero-action hero-action-primary" onclick="showTab('vivo')">Explorar cotizaciones <span aria-hidden="true">↗</span></button>
+        <a class="hero-action" href="portafolios.html">Ver estrategias <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="radar-snapshot" aria-label="Resumen del último snapshot del mercado">
+      <div class="snapshot-heading"><span><span class="status-dot" aria-hidden="true"></span> Snapshot semanal</span><time id="snapshotDateCard" class="snapshot-date">—</time></div>
+      <div class="snapshot-kpis">
+        <div class="snapshot-kpi"><span id="heroCount" class="snapshot-kpi-value">—</span><span class="snapshot-kpi-label">instrumentos con datos</span></div>
+        <div class="snapshot-kpi"><span id="heroBreadth" class="snapshot-kpi-value snapshot-kpi-positive">—</span><span class="snapshot-kpi-label">suben en el día</span></div>
+        <div class="snapshot-kpi"><span id="heroAverage" class="snapshot-kpi-value">—</span><span class="snapshot-kpi-label">YTD promedio</span></div>
+        <div class="snapshot-kpi"><span id="heroLeader" class="snapshot-kpi-value snapshot-kpi-positive">—</span><span id="heroLeaderSymbol" class="snapshot-kpi-label">mejor variación diaria</span></div>
+      </div>
+      <div id="heroBars" class="snapshot-chart" role="img" aria-label="Variaciones diarias de los principales instrumentos"></div>
+      <div class="snapshot-foot"><span>Variación diaria del radar</span><span>Fuente: snapshot semanal</span></div>
+    </div>
+  </section>
 
   <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="card p-5">
@@ -414,6 +436,75 @@ const META = Object.fromEntries(INSTRUMENTS.map(i => [i.s, i]));
 const CAT_COLOR = { 'acción':'#22d3ee', 'ETF':'#34d399', 'chile':'#a78bfa' };
 const CAT_LABEL = { 'acción':'Acción', 'ETF':'ETF', 'chile':'Chile' };
 
+async function loadSnapshotHighlights() {
+  const track = document.getElementById('marketTicker');
+  try {
+    const response = await fetch('datos/snapshot_latest.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const snapshot = await response.json();
+    const entries = Object.entries(snapshot.instrumentos || {}).map(([symbol, quote]) => ({ symbol, ...quote }));
+    const valid = entries.filter(item => item.error == null && item.precio != null);
+    const movers = valid.filter(item => item.cambio_dia_pct != null && Number.isFinite(Number(item.cambio_dia_pct))).sort((a, b) => Number(b.cambio_dia_pct) - Number(a.cambio_dia_pct));
+    const ytdValues = valid.map(item => item.ytd_pct).filter(value => value != null && Number.isFinite(Number(value))).map(Number);
+    const positive = movers.filter(item => Number(item.cambio_dia_pct) > 0).length;
+    const leader = movers.find(item => Number(item.cambio_dia_pct) > 0) || movers[0];
+    const total = entries.length;
+    const date = snapshot.fecha ? new Date(`${snapshot.fecha}T12:00:00`).toLocaleDateString('es-CL', { day: '2-digit', month: 'short', year: 'numeric' }) : '—';
+
+    for (const id of ['snapshotDate', 'snapshotDateCard', 'headerSnapshotDate', 'tickerDate']) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = date;
+    }
+    document.getElementById('heroCount').textContent = `${valid.length}/${total}`;
+    document.getElementById('heroBreadth').textContent = `${positive}/${valid.length}`;
+    document.getElementById('heroAverage').textContent = ytdValues.length ? `${(ytdValues.reduce((sum, value) => sum + value, 0) / ytdValues.length).toFixed(1)}%` : '—';
+    if (leader) {
+      document.getElementById('heroLeader').textContent = `${Number(leader.cambio_dia_pct) > 0 ? '+' : ''}${Number(leader.cambio_dia_pct).toFixed(2)}%`;
+      document.getElementById('heroLeaderSymbol').textContent = `${leader.symbol.replace('.SN', '')} · mejor movimiento`;
+    }
+
+    const picks = [...movers.slice(0, 5), ...movers.slice(-3).reverse()];
+    const group = document.createElement('div');
+    group.className = 'market-ticker-group';
+    for (const item of picks) {
+      const value = Number(item.cambio_dia_pct);
+      const entry = document.createElement('span');
+      entry.className = 'market-ticker-item';
+      const symbol = document.createElement('span');
+      symbol.className = 'market-ticker-symbol';
+      symbol.textContent = item.symbol.replace('.SN', '');
+      const change = document.createElement('span');
+      change.className = `market-ticker-change ${value >= 0 ? 'market-up' : 'market-down'}`;
+      change.textContent = `${value > 0 ? '+' : ''}${value.toFixed(2)}%`;
+      entry.append(symbol, change);
+      group.append(entry);
+    }
+    if (track && picks.length) {
+      const duplicate = group.cloneNode(true);
+      duplicate.setAttribute('aria-hidden', 'true');
+      track.replaceChildren(group, duplicate);
+    }
+
+    const bars = document.getElementById('heroBars');
+    if (bars && movers.length) {
+      const sample = [...movers].sort((a, b) => Math.abs(Number(b.cambio_dia_pct)) - Math.abs(Number(a.cambio_dia_pct))).slice(0, 12).reverse();
+      const max = Math.max(...sample.map(item => Math.abs(Number(item.cambio_dia_pct))), 1);
+      bars.replaceChildren(...sample.map((item, index) => {
+        const bar = document.createElement('span');
+        const value = Number(item.cambio_dia_pct);
+        bar.className = value < 0 ? 'bar-down' : '';
+        bar.style.setProperty('--bar-height', `${Math.max(16, Math.abs(value) / max * 100)}%`);
+        bar.style.setProperty('--bar-index', index);
+        bar.title = `${item.symbol}: ${value > 0 ? '+' : ''}${value.toFixed(2)}%`;
+        return bar;
+      }));
+    }
+  } catch (error) {
+    if (track) track.textContent = 'Snapshot semanal no disponible';
+    console.warn('No se pudo cargar el resumen del snapshot:', error);
+  }
+}
+
 Chart.defaults.color = '#94a3b8';
 Chart.defaults.borderColor = '#223252';
 Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
@@ -427,6 +518,8 @@ function showTab(tab) {
   document.getElementById('tabVivo').classList.toggle('hidden', tab !== 'vivo');
   document.getElementById('btnAnalisis').classList.toggle('active', tab === 'analisis');
   document.getElementById('btnVivo').classList.toggle('active', tab === 'vivo');
+  document.getElementById('btnAnalisis').setAttribute('aria-pressed', String(tab === 'analisis'));
+  document.getElementById('btnVivo').setAttribute('aria-pressed', String(tab === 'vivo'));
   if (tab === 'vivo') loadLive();
 }
 
@@ -629,6 +722,8 @@ function renderLive(quotes, asOf) {
   clearTimeout(window._liveT);
   window._liveT = setTimeout(loadLive, 60000);
 }
+
+loadSnapshotHighlights();
 </script>
 </body>
 </html>

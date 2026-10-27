@@ -30,6 +30,7 @@ tailwind.config = {
   .decl { font-size: 3.5rem; line-height: 1; font-weight: 900; }
   @media (min-width: 1024px) { .decl { font-size: 5rem; } }
 </style>
+<link rel="stylesheet" href="modern.css?v=2">
 </head>
 <body class="bg-ink text-slate-200 antialiased min-h-screen">
 
@@ -37,7 +38,7 @@ tailwind.config = {
 <header class="border-b border-line sticky top-0 z-40 bg-ink/90 backdrop-blur">
   <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-danger to-warn flex items-center justify-center font-extrabold text-ink text-lg">A</div>
+      <div class="logo-mark w-9 h-9 rounded-xl bg-gradient-to-br from-danger to-warn flex items-center justify-center font-extrabold text-ink text-lg">A</div>
       <div>
         <h1 class="font-bold text-white leading-tight">Portafolios Agresivos</h1>
         <p class="text-xs text-slate-400">Manifiesto del mercado + apuestas de máximo riesgo · 2026</p>
@@ -55,10 +56,11 @@ tailwind.config = {
   <!-- ============================================================ -->
   <!-- MANIFIESTO -->
   <!-- ============================================================ -->
-  <section>
+  <section class="portfolio-hero">
     <div class="mb-6">
-      <p class="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Manifiesto · septiembre 2026</p>
+      <p class="portfolio-tag text-xs text-accent font-semibold uppercase tracking-widest mb-4">Manifiesto · septiembre 2026</p>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Por qué el mercado está<br>exactamente donde está</h2>
+      <p class="portfolio-intro mt-4">Una tesis visual sobre el ciclo de semiconductores, sus cuellos de botella y el riesgo de perseguir retornos pasados.</p>
     </div>
 
     <div class="space-y-6">
