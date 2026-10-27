@@ -15,3 +15,7 @@ Thumbs.db
 # Logs
 *.log
 nohup.out
+
+# Datos personales de cartera: mantener fuera de GitHub
+/08_plan_accion_posiciones.md
+/datos/*Racional*

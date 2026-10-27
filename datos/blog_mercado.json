@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2026-10-27",
+    "date": "2026-10-27",
+    "headline": "El rebote de un día no borra la corrección",
+    "kicker": "BITÁCORA · SEMICONDUCTORES Y CARTERAS DE ALTO RIESGO",
+    "stance": "Corrección con rebote técnico · sesgo neutral-cauteloso",
+    "summary": "El 27 de octubre rebotaron los cuatro portafolios modelo, entre +4,77% y +7,28% en un día. Pero desde el 12 de octubre el portafolio Momentum aún acumula −9,57% y El Foso −12,60%: una sesión positiva no confirma un cambio de tendencia.",
+    "windowLabel": "12–26 oct",
+    "sessionLabel": "27 oct",
+    "netLabel": "12–27 oct",
+    "performance": [
+      {"name": "#1 · Apocalipsis de memoria", "windowReturn": -14.72, "sessionReturn": 7.28, "netReturn": -8.52},
+      {"name": "#2 · El foso (procesadores)", "windowReturn": -16.56, "sessionReturn": 4.77, "netReturn": -12.60},
+      {"name": "#3 · Momentum extremo", "windowReturn": -15.35, "sessionReturn": 6.86, "netReturn": -9.57},
+      {"name": "#4 · IA total", "windowReturn": -13.27, "sessionReturn": 6.19, "netReturn": -8.01}
+    ],
+    "scores": [
+      {"name": "#3 · Momentum extremo", "score": 63, "signal": "ESPECULATIVO", "breakdown": "Estructura 22/35 · momentum 15/25 · distancia técnica 15/20 · catalizadores 11/20", "note": "Concentración alta en un solo factor; mantenerla como satélite de alto riesgo, no como núcleo."},
+      {"name": "#2 · El foso", "score": 68, "signal": "MANTENER · VIGILANCIA ALTA", "breakdown": "Estructura 31/35 · momentum 12/25 · distancia técnica 17/20 · catalizadores 8/20", "note": "Mejor calidad estructural, pero el equipo de fabricación está expuesto al retraso de entregas y al ciclo de capex."}
+    ],
+    "sections": [
+      {
+        "heading": "Qué ocurrió y por qué importa",
+        "paragraphs": [
+          {"text": "La señal más útil no fue un titular de demanda débil, sino la diferencia entre ventas récord y capacidad de entrega. Investing.com reportó que Lam Research registró US$8.22 mil millones de ingresos en su trimestre de septiembre, +54% interanual, y EPS de US$2.20; aun así, la guía de diciembre quedó limitada por escasez de componentes y parte de los envíos se trasladaría a marzo.", "sources": [1]},
+          {"text": "La presión en equipos fue real: Trefis calculó que LRCX cayó 24,7% en el mes hasta el 26 de octubre —frente a −0,8% del S&P 500— y estaba 45,1% bajo su máximo del 30 de junio.", "sources": [2]},
+          {"text": "Mi lectura: el mercado está penalizando la ejecución, el calendario del capex y las valoraciones exigentes. Los datos disponibles no prueban que la demanda de IA haya colapsado; sí muestran que demanda alta no garantiza entregas inmediatas ni retornos bursátiles lineales.", "sources": [1]}
+        ]
+      },
+      {
+        "heading": "Qué muestran las carteras agresivas",
+        "paragraphs": [
+          {"text": "Los retornos son cálculos teóricos de precio, con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones, rebalanceos ni representan una cuenta personal. Entre el 12 y el 26 de octubre, Momentum cayó 15,35%; el 27 rebotó 6,86%, y quedó −9,57% frente al 12. Su mezcla es 20% cada una en SNDK, DELL, MU, INTC y MRVL: cinco nombres muy expuestos al mismo ciclo de semiconductores y memoria."},
+          {"text": "El Foso fue el más golpeado en esa ventana: −16,56% hasta el 26 y +4,77% el 27, para −12,60% neto. La exposición a equipos (KLAC, AMAT y LRCX) fue especialmente vulnerable a las restricciones de suministro. La cartera IA Total fue la menos dañada en la muestra (−8,01% neto), pero tampoco es defensiva: sus posiciones siguen correlacionadas con el gasto en IA."},
+          {"text": "El cesto Momentum conserva un YTD teórico ponderado de +233,53% y está aproximadamente 29,46% bajo los máximos de 52 semanas de sus componentes. Eso describe momentum y volatilidad; no demuestra que esté barato. El descuento frente al máximo no equivale a una valoración atractiva."}
+        ]
+      },
+      {
+        "heading": "Criterio propio: calidad frente a riesgo de concentración",
+        "paragraphs": [
+          {"text": "Momentum extremo: 63/100 · ESPECULATIVO. Estructura 22/35, momentum 15/25, distancia técnica 15/20, catalizadores 11/20. El YTD sigue fuerte, pero la caída reciente y la concentración en un solo factor impiden tratarlo como cartera núcleo."},
+          {"text": "El Foso: 68/100 · MANTENER con vigilancia alta. Estructura 31/35, momentum 12/25, distancia técnica 17/20, catalizadores 8/20. Tiene mejores barreras competitivas, pero el tramo de equipos puede sufrir aunque la tesis de IA siga intacta; no es un refugio ni una compra automática."}
+        ]
+      }
+    ],
+    "opinion": "Mi caso base para Momentum es una recuperación irregular, no un rebote vertical: durante los próximos 3–6 meses veo más probable un mercado lateral-volátil con sesgo apenas positivo que una continuación limpia del rally. Mantengo un sesgo cauteloso hasta que mejoren las entregas y las guías; el riesgo de otra caída relevante sigue alto.",
+    "scenarios": [
+      {"name": "Bajista", "probability": 35, "range": "−25% a −35%", "driver": "Se prolongan las restricciones, se retrasan inversiones de clientes o el mercado recorta múltiplos de crecimiento."},
+      {"name": "Base", "probability": 45, "range": "−5% a +12%", "driver": "La demanda se mantiene, los envíos diferidos se recuperan gradualmente y el sector oscila mientras demuestra beneficios."},
+      {"name": "Alcista", "probability": 20, "range": "+20% a +35%", "driver": "Se despejan los cuellos de botella, se confirman presupuestos de capex y las revisiones de utilidades vuelven a subir."}
+    ],
+    "strategy": [
+      "No tomar la sesión del 27 de octubre como señal suficiente para aumentar Momentum; exigir confirmación en más de una semana y en las próximas guías de resultados.",
+      "No promediar a la baja por sistema. Mantener Momentum como una posición especulativa y subordinada a un límite de riesgo definido antes de entrar.",
+      "Para El Foso, separar la tesis de largo plazo del riesgo de ejecución: vigilar entregas, inventarios, guía de China y recuperación de los envíos postergados.",
+      "Revisar semanalmente si la amplitud del rebote se sostiene (más que una sola sesión), si los ETF de semiconductores forman un mínimo creciente y si las compañías confirman capex sin deterioro de márgenes."
+    ],
+    "watchlist": [
+      "Siguiente guía de Lam Research: ¿los envíos diferidos llegan en marzo o vuelven a postergarse?",
+      "Señales de que el gasto en IA se traduce en ingresos y caja, no solo en compromisos de inversión.",
+      "Amplitud del mercado: memoria, diseñadores, equipos y ETFs deben dejar de caer en bloque para confirmar una recuperación sectorial."
+    ],
+    "sources": [
+      {"title": "Investing.com · resultados de Lam y presión de suministro", "url": "https://www.investing.com/news/stock-market-news/why-is-lam-research-stock-sliding-today-93CH-4965056"},
+      {"title": "Trefis · caída de LRCX frente al mercado, al 26-oct-2026", "url": "https://www.trefis.com/stock/lrcx/articles/620735/lam-research-stock-is-45-below-its-high-how-deep-have-past-drops-gone/2026-10-27"},
+      {"title": "Datos del radar · historial semanal de precios", "url": "datos/historial_semanal.csv"}
+    ],
+    "dataNote": "Snapshot del 27-oct-2026; 34/35 instrumentos con precio. Los retornos de carteras son ponderaciones teóricas calculadas desde historial_semanal.csv. ^IPSA no tuvo datos.",
+    "disclaimer": "Opinión prospectiva y escenarios subjetivos, no pronóstico ni asesoría financiera. Rangos hipotéticos para el portafolio modelo Momentum; no corresponden a resultados de una cuenta personal."
+  }
+]

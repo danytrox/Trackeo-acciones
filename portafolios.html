@@ -372,6 +372,20 @@ tailwind.config = {
     </p>
   </footer>
 
+  <section id="marketBlog" class="market-blog" aria-labelledby="marketBlogTitle">
+    <div class="market-blog-heading">
+      <div>
+        <p class="blog-eyebrow"><span class="market-live-dot" aria-hidden="true"></span> Análisis continuo · Semiconductores</p>
+        <h2 id="marketBlogTitle">Bitácora del mercado</h2>
+        <p class="blog-intro">Qué cayó, por qué se movió el mercado y qué señales pueden cambiar la tesis. Cada actualización separa datos observados de opinión y escenarios.</p>
+      </div>
+      <div class="blog-updated"><span class="status-dot" aria-hidden="true"></span><span id="marketBlogUpdated">Preparando la última entrada…</span></div>
+    </div>
+    <div id="marketBlogEntries" class="market-blog-entries" aria-live="polite">
+      <div class="blog-loading">Cargando la bitácora…</div>
+    </div>
+  </section>
+
 </main>
 
 <script>
@@ -393,6 +407,169 @@ doughnut('dona1', ['SNDK','MU','DELL','WDC','STX','SOXX'], [25,25,15,15,10,10], 
 doughnut('dona2', ['ASML','KLAC','TSM','AMAT','LRCX'], [25,25,25,12.5,12.5], [cyan,green,blue,purple,amber]);
 doughnut('dona3', ['SNDK','DELL','MU','INTC','MRVL'], [20,20,20,20,20], [green,blue,cyan,red,purple]);
 doughnut('dona4', ['NVDA','DELL','ARM','TSM','MRVL','ASML','AIS'], [15,15,15,15,15,10,15], [green,blue,purple,cyan,amber,red,'#60a5fa']);
+
+function blogElement(tag, className, text) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text != null) element.textContent = text;
+  return element;
+}
+
+function blogPercent(value) {
+  const number = Number(value);
+  const sign = number < 0 ? '−' : number > 0 ? '+' : '';
+  return `${sign}${Math.abs(number).toLocaleString('es-CL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
+}
+
+function renderBlogParagraph(paragraph, sources) {
+  const p = blogElement('p', 'blog-paragraph', paragraph.text);
+  for (const sourceId of paragraph.sources || []) {
+    const source = sources?.[sourceId - 1];
+    if (!source) continue;
+    const link = blogElement('a', 'blog-cite', `[${sourceId}]`);
+    link.href = source.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.title = source.title;
+    p.append(document.createTextNode(' '), link);
+  }
+  return p;
+}
+
+function renderMarketBlogPost(post) {
+  const article = blogElement('article', 'blog-post');
+  article.setAttribute('aria-label', post.headline || 'Entrada de la bitácora');
+
+  const head = blogElement('header', 'blog-post-head');
+  const meta = blogElement('div', 'blog-post-meta');
+  const date = blogElement('time', 'blog-post-date');
+  date.dateTime = post.date || '';
+  date.textContent = post.date ? new Date(`${post.date}T12:00:00`).toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+  meta.append(date, blogElement('span', 'blog-post-kicker', post.kicker || 'BITÁCORA DEL MERCADO'));
+  head.append(meta, blogElement('span', 'blog-stance', post.stance || ''));
+  article.append(head, blogElement('h3', 'blog-post-title', post.headline || ''), blogElement('p', 'blog-summary', post.summary || ''));
+
+  if (Array.isArray(post.performance) && post.performance.length) {
+    const perfSection = blogElement('section', 'blog-post-block');
+    perfSection.append(blogElement('h4', 'blog-block-title', 'Pulso de las cuatro carteras modelo'));
+    const grid = blogElement('div', 'blog-performance-grid');
+    for (const row of post.performance) {
+      const card = blogElement('div', 'blog-metric-card');
+      card.append(blogElement('span', 'blog-metric-name', row.name));
+      card.append(blogElement('strong', `blog-metric-net ${Number(row.netReturn) >= 0 ? 'is-positive' : 'is-negative'}`, blogPercent(row.netReturn)));
+      const detail = blogElement('div', 'blog-metric-details');
+      detail.append(blogElement('span', '', `${post.windowLabel || 'Periodo previo'} ${blogPercent(row.windowReturn)}`));
+      detail.append(blogElement('span', '', `${post.sessionLabel || 'Sesión'} ${blogPercent(row.sessionReturn)}`));
+      card.append(detail);
+      card.append(blogElement('span', 'blog-metric-net-label', post.netLabel || 'Rendimiento acumulado'));
+      grid.append(card);
+    }
+    perfSection.append(grid, blogElement('p', 'blog-data-note', 'Retorno ponderado de precio; pesos estáticos, sin dividendos ni comisiones. No representa una cuenta personal.'));
+    article.append(perfSection);
+  }
+
+  for (const section of post.sections || []) {
+    const block = blogElement('section', 'blog-post-block');
+    block.append(blogElement('h4', 'blog-block-title', section.heading || ''));
+    for (const paragraph of section.paragraphs || []) block.append(renderBlogParagraph(paragraph, post.sources));
+    article.append(block);
+  }
+
+  if (Array.isArray(post.scores) && post.scores.length) {
+    const scoreSection = blogElement('section', 'blog-post-block');
+    scoreSection.append(blogElement('h4', 'blog-block-title', 'Criterio propio · puntuación sobre 100'));
+    const scoreGrid = blogElement('div', 'blog-score-grid');
+    for (const item of post.scores) {
+      const card = blogElement('div', 'blog-score-card');
+      const top = blogElement('div', 'blog-score-top');
+      top.append(blogElement('strong', '', item.name), blogElement('span', 'blog-score-value', `${item.score}/100`));
+      card.append(top, blogElement('span', 'blog-score-signal', item.signal || ''));
+      const track = blogElement('div', 'blog-score-track');
+      const fill = blogElement('span', 'blog-score-fill');
+      fill.style.width = `${Math.max(0, Math.min(100, Number(item.score) || 0))}%`;
+      track.append(fill);
+      card.append(track, blogElement('p', 'blog-score-breakdown', item.breakdown || ''), blogElement('p', 'blog-score-note', item.note || ''));
+      scoreGrid.append(card);
+    }
+    scoreSection.append(scoreGrid);
+    article.append(scoreSection);
+  }
+
+  if (post.opinion) {
+    const opinion = blogElement('div', 'blog-opinion');
+    opinion.append(blogElement('span', 'blog-opinion-label', 'Mi lectura · próximos 3–6 meses'), blogElement('p', '', post.opinion));
+    article.append(opinion);
+  }
+
+  if (Array.isArray(post.scenarios) && post.scenarios.length) {
+    const scenarioSection = blogElement('section', 'blog-post-block');
+    scenarioSection.append(blogElement('h4', 'blog-block-title', 'Escenarios subjetivos · cartera #3 Momentum'));
+    const grid = blogElement('div', 'blog-scenario-grid');
+    for (const scenario of post.scenarios) {
+      const card = blogElement('div', `blog-scenario-card scenario-${String(scenario.name).toLowerCase()}`);
+      const top = blogElement('div', 'blog-scenario-top');
+      top.append(blogElement('strong', '', scenario.name), blogElement('span', 'blog-scenario-probability', `${scenario.probability}%`));
+      card.append(top, blogElement('strong', 'blog-scenario-range', scenario.range), blogElement('p', 'blog-scenario-driver', scenario.driver));
+      grid.append(card);
+    }
+    scenarioSection.append(grid);
+    article.append(scenarioSection);
+  }
+
+  for (const [heading, items, className] of [
+    ['Estrategia desde aquí', post.strategy, 'blog-strategy-list'],
+    ['Qué vamos a vigilar', post.watchlist, 'blog-watch-list']
+  ]) {
+    if (!Array.isArray(items) || !items.length) continue;
+    const block = blogElement('section', 'blog-post-block');
+    block.append(blogElement('h4', 'blog-block-title', heading));
+    const list = blogElement('ul', className);
+    for (const text of items) list.append(blogElement('li', '', text));
+    block.append(list);
+    article.append(block);
+  }
+
+  const foot = blogElement('footer', 'blog-post-foot');
+  if (post.dataNote) foot.append(blogElement('p', 'blog-data-note', post.dataNote));
+  if (post.disclaimer) foot.append(blogElement('p', 'blog-disclaimer', post.disclaimer));
+  if (Array.isArray(post.sources) && post.sources.length) {
+    const sources = blogElement('div', 'blog-sources');
+    sources.append(blogElement('span', 'blog-sources-title', 'Fuentes y datos'));
+    const list = blogElement('ul', '');
+    post.sources.forEach((source, index) => {
+      const li = document.createElement('li');
+      const link = blogElement('a', '', `[${index + 1}] ${source.title}`);
+      link.href = source.url;
+      if (/^https?:/i.test(source.url)) { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
+      li.append(link);
+      list.append(li);
+    });
+    sources.append(list);
+    foot.append(sources);
+  }
+  article.append(foot);
+  return article;
+}
+
+async function loadMarketBlog() {
+  const container = document.getElementById('marketBlogEntries');
+  const updated = document.getElementById('marketBlogUpdated');
+  try {
+    const response = await fetch('datos/blog_mercado.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const posts = await response.json();
+    if (!Array.isArray(posts)) throw new Error('Formato de bitácora inválido');
+    container.replaceChildren(...posts.map(renderMarketBlogPost));
+    if (posts.length && updated) updated.textContent = `Última entrada · ${new Date(`${posts[0].date}T12:00:00`).toLocaleDateString('es-CL', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+    if (!posts.length) container.textContent = 'Aún no hay entradas. La primera aparecerá tras la próxima revisión semanal.';
+  } catch (error) {
+    container.textContent = 'No se pudo cargar la bitácora. Intenta recargar la página.';
+    if (updated) updated.textContent = 'Bitácora temporalmente no disponible';
+    console.warn('No se pudo cargar la bitácora del mercado:', error);
+  }
+}
+
+loadMarketBlog();
 </script>
 </body>
 </html>
