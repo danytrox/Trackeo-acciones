@@ -56,7 +56,7 @@ tailwind.config = {
 <nav class="max-w-6xl mx-auto px-5 pt-5 flex gap-2">
   <button id="btnAnalisis" onclick="showTab('analisis')" class="tabbtn active px-4 py-2 rounded-lg border border-line bg-panel text-white font-semibold text-sm">📊 Análisis</button>
   <button id="btnVivo" onclick="showTab('vivo')" class="tabbtn px-4 py-2 rounded-lg border border-line bg-ink text-slate-300 font-semibold text-sm">🔴 Mercado en vivo</button>
-  <a href="/portafolios.html" class="px-4 py-2 rounded-lg border border-danger/40 bg-danger/10 text-danger font-semibold text-sm hover:bg-danger/20 transition">🔥 Portafolios agresivos</a>
+  <a href="portafolios.html" class="px-4 py-2 rounded-lg border border-danger/40 bg-danger/10 text-danger font-semibold text-sm hover:bg-danger/20 transition">🔥 Portafolios agresivos</a>
 </nav>
 
 <main class="max-w-6xl mx-auto px-5 py-8">
@@ -498,17 +498,52 @@ async function loadLive() {
   const offline = document.getElementById('serverOffline');
   const syms = INSTRUMENTS.map(i => i.s).join(',');
   try {
-    const r = await fetch('/api/quotes?symbols=' + encodeURIComponent(syms));
+    const r = await fetch('api/quotes?symbols=' + encodeURIComponent(syms));
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const data = await r.json();
     const quotes = Object.fromEntries(data.quotes.map(q => [q.symbol, q]));
     offline.classList.add('hidden');
+    setMode('live');
     renderLive(quotes, data.asOf);
     loading.classList.add('hidden');
+    return;
   } catch(e) {
-    offline.classList.remove('hidden');
-    loading.classList.add('hidden');
-    body.innerHTML = '';
+    // Sin proxy local (p. ej. GitHub Pages): usar el snapshot estático commiteado.
+    try {
+      const snap = await fetch('datos/snapshot_latest.json');
+      if (!snap.ok) throw new Error('HTTP ' + snap.status);
+      const sj = await snap.json();
+      const quotes = {};
+      for (const [sym, q] of Object.entries(sj.instrumentos || {})) {
+        quotes[sym] = {
+          symbol: sym,
+          name: q.nombre || sym,
+          price: q.precio,
+          currency: q.moneda || '',
+          dayChangePct: q.cambio_dia_pct,
+          ytdPct: q.ytd_pct,
+          distFromHigh52w: q.dist_max52_pct,
+          high52w: null, low52w: null, posIn52wRange: null, exchange: '',
+          error: q.error,
+        };
+      }
+      offline.classList.add('hidden');
+      setMode('snapshot', sj.fecha);
+      renderLive(quotes, null);
+      loading.classList.add('hidden');
+      return;
+    } catch(e2) {
+      offline.classList.remove('hidden');
+      loading.classList.add('hidden');
+      body.innerHTML = '';
+    }
+  }
+}
+
+function setMode(mode, fecha) {
+  const el = document.getElementById('lastUpdate');
+  if (mode === 'snapshot') {
+    el.textContent = 'Snapshot estático del ' + (fecha || '') + ' (sin proxy en vivo)';
   }
 }
 
@@ -544,6 +579,7 @@ function renderLive(quotes, asOf) {
         <td class="text-right py-3 px-3 num font-semibold ${colorOf(ytd)}">${fmtPct(ytd)}</td>
         <td class="text-right py-3 px-3 num font-semibold ${colorOf(dist)}">${fmtPct(dist)}</td>
         <td class="py-3 px-4">
+          ${pos == null ? '<span class="text-slate-500 text-xs">—</span>' : `
           <div class="flex items-center gap-2">
             <span class="text-[10px] text-slate-500 num">${fmt(q.low52w,0)}</span>
             <div class="flex-1 h-1.5 rounded bg-panel2 relative">
@@ -551,7 +587,7 @@ function renderLive(quotes, asOf) {
               <div class="absolute top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white shadow" style="left:${pos}%"></div>
             </div>
             <span class="text-[10px] text-slate-500 num">${fmt(q.high52w,0)}</span>
-          </div>
+          </div>`}
         </td>
         <td class="text-center py-3 px-3 text-xs num">
           <span class="text-danger">${bear>0?'+':''}${bear}%</span> / <span class="text-accent">${base>0?'+':''}${base}%</span> / <span class="text-accent2">${bull>0?'+':''}${bull}%</span>

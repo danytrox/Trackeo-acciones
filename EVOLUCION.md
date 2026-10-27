@@ -1,5 +1,17 @@
 # Evolución semanal del mercado
 
+## Semana del 2026-10-27
+
+- Dirección general: **risk-on** — rally amplio en semiconductores/IA y en toda la cadena de chips, con energía y materias primas en rojo.
+- Top subidores por precio: WDC +11,3%, DELL +10,2%, SNPS +9,9%, CDNS +9,6%, AMD +8,4%.
+- Top bajadores por precio: LTM.SN −4,3%, USO −3,6%, DBC −1,5%, XLE −1,5%, VDE −1,2%.
+- Top subidores por cambio de retorno YTD: DELL +36,5 pp, SNDK +21,1 pp, WDC +20,7 pp, AMD +19,3 pp, MU +17,2 pp.
+- Bajadores por retorno YTD: USO −8,8 pp, LTM.SN −5,6 pp, BSANTANDER.SN −3,3 pp, DBC −2,4 pp, XLE −2,3 pp.
+- Notable: el almacenamiento (WDC, DELL, STX) lideró el rebote con subidas de uno a dos dígitos, recuperando sus YTD tras la corrección previa.
+- Notable: los ETF del sector (SOXX, SMH, PSI, AIS) subieron entre +5,7% y +7,3% en el periodo, confirmando el apetito por riesgo.
+- Lectura: rotación clara hacia tecnología/semis; solo energía/commodities (XLE, VDE, USO, DBC) y los nombres chilenos (LTM.SN, BSANTANDER.SN) cierran en rojo.
+- Nota técnica: ^IPSA sigue sin datos (HTTP 404); 34/35 instrumentos del radar con datos.
+
 ## Semana del 2026-10-05
 
 - Dirección general: **mixto con sesgo risk-on** — fuerte rebote en semis/IA y la cadena de fabricación de chips, pero caídas marcadas en almacenamiento (WDC/STX) y en la bolsa chilena.
