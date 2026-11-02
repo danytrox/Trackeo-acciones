@@ -1,5 +1,176 @@
 [
   {
+    "id": "2026-11-02",
+    "date": "2026-11-02",
+    "headline": "El superciclo de memoria se muerde la cola: los precios que subieron a SanDisk +318% acaban de hundir a Intel",
+    "kicker": "BITÁCORA · SEMICONDUCTORES Y CARTERAS DE ALTO RIESGO",
+    "stance": "Corrección con catalizador real · sesgo cauteloso / risk-off",
+    "summary": "Intel cayó 28,6% el 30 de octubre, su peor jornada desde 1974, al guiar el cuarto trimestre muy por debajo de lo esperado: el encarecimiento de la memoria —el mismo motor que llevó a SanDisk a +318% YTD— está destruyendo la demanda de PCs. En la semana la cartera Momentum cayó 16,1% y El Foso resistió con −2,5%.",
+    "windowLabel": "12 oct → 27 oct",
+    "sessionLabel": "27 oct → 2 nov",
+    "netLabel": "12 oct → 2 nov",
+    "performance": [
+      {
+        "name": "#1 · Apocalipsis de memoria",
+        "windowReturn": -8.52,
+        "sessionReturn": -8.23,
+        "netReturn": -15.92
+      },
+      {
+        "name": "#2 · El foso (procesadores)",
+        "windowReturn": -12.6,
+        "sessionReturn": -2.47,
+        "netReturn": -15.04
+      },
+      {
+        "name": "#3 · Momentum extremo",
+        "windowReturn": -9.57,
+        "sessionReturn": -16.06,
+        "netReturn": -24.1
+      },
+      {
+        "name": "#4 · IA total",
+        "windowReturn": -8.01,
+        "sessionReturn": -10.0,
+        "netReturn": -17.11
+      }
+    ],
+    "scores": [
+      {
+        "name": "#3 · Momentum extremo",
+        "score": 56,
+        "signal": "ESPECULATIVO",
+        "breakdown": "Estructura 22/35 · momentum 11/25 · distancia técnica 17/20 · catalizadores 6/20",
+        "note": "Bajó desde 63/100: el momentum se quebró (INTC −28,6%) y el catalizador ahora es negativo. Estar −40,7% bajo el máximo no lo hace barato: sigue a +183% YTD promedio."
+      },
+      {
+        "name": "#2 · El foso",
+        "score": 68,
+        "signal": "MANTENER · VIGILANCIA ALTA",
+        "breakdown": "Estructura 31/35 · momentum 11/25 · distancia técnica 18/20 · catalizadores 8/20",
+        "note": "El foso hizo su trabajo esta semana (−2,5% vs −16,1% de Momentum): equipos y fundición capturan margen sin importar qué diseñador gane, y KLAC cerró en verde."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Qué ocurrió y por qué importa",
+        "paragraphs": [
+          {
+            "text": "Intel cayó 28,58% el 30 de octubre, su peor jornada desde julio de 1974, tras guiar ingresos para el cuarto trimestre de US$15.000–16.000 millones frente a los US$17.100 millones que esperaba el consenso, con EPS ajustado de US$0,25 contra US$0,43 estimado. El tercer trimestre había superado levemente las expectativas, pero la guía desplomó la acción.",
+            "sources": [
+              1,
+              2
+            ]
+          },
+          {
+            "text": "La causa no es un colapso de la IA, sino el encarecimiento de la memoria: los precios de DRAM/NAND suben por la demanda de centros de datos, encarecen fabricar PCs y frenan la demanda de consumo. El CFO David Zinsner anticipó que la debilidad del mercado de PCs continuará al menos hasta el primer semestre de 2027, y la guía además absorbe el impacto de la explosión en una fábrica de Israel (~US$600 millones de ingresos perdidos en dos trimestres).",
+            "sources": [
+              1,
+              2
+            ]
+          },
+          {
+            "text": "El castigo fue amplio, no solo de Intel: la caída del 30 de octubre golpeó a todo el complejo de semiconductores y al Nasdaq. MarketScreener documentó que el índice SOX ya había perdido más de 16% en octubre, su peor corrección desde julio, arrastrado por el temor a la rentabilidad del gasto en IA — Alphabet cayó casi 13% con flujo de caja libre negativo de US$9.100 millones—, aunque la valoración del SOX (17× beneficios forward, 1,5 desviaciones bajo su mediana de 5 años) sugiere que la corrección podría estar sobreextendida.",
+            "sources": [
+              3
+            ]
+          },
+          {
+            "text": "Qualcomm cerró en US$164,79 (−11,12%) el mismo día, arrastrada por la advertencia de Intel sobre PCs: su tesis de que 'los teléfonos tocaron fondo' queda a prueba en su reporte del 4 de noviembre, porque los teléfonos compiten por la misma memoria escasa que encarece los PCs.",
+            "sources": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Qué muestran las carteras agresivas",
+        "paragraphs": [
+          {
+            "text": "Los retornos son cálculos teóricos de precio con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones ni rebalanceos y no representan una cuenta personal. Entre el 27 de octubre y el 2 de noviembre, Momentum cayó 16,06% —la peor de las cuatro— porque concentra 20% en Intel, precisamente el nombre que se desplomó; desde el 12 de octubre acumula −24,10%."
+          },
+          {
+            "text": "El Foso fue la más resiliente de la semana: −2,47% frente al −16,06% de Momentum. Su exposición a equipos y fundición (ASML, TSM, KLAC, AMAT, LRCX) la aísla del ciclo de PCs; KLAC incluso subió +2,92% en la semana. La cartera IA Total cayó 10,0% y Apocalipsis de memoria 8,23%, castigadas ambas por la rotación de salida de los nombres más extendidos."
+          },
+          {
+            "text": "El cesto Momentum conserva un YTD teórico ponderado de +183% pero sus cinco componentes están en promedio −40,7% bajo sus máximos de 52 semanas, con INTC a −53,8% y SNDK a −51,1%. Ese descuento describe cuánto corrió antes, no una valoración atractiva: un nombre que subió +300% y cae −50% desde el techo sigue lejos de ser barato en términos de lo que el mercado ya pagó."
+          }
+        ]
+      },
+      {
+        "heading": "Criterio propio: el catalizador cambió de signo",
+        "paragraphs": [
+          {
+            "text": "Momentum extremo: 56/100 · ESPECULATIVO (bajó desde 63). Estructura 22/35, momentum 11/25, distancia técnica 17/20, catalizadores 6/20. La tesis de seguir a los ganadores de 2026 se quebró esta semana: el momentum ahora juega en contra y el catalizador (precios de memoria estrangulando al consumidor) es negativo para dos de sus cinco posiciones."
+          },
+          {
+            "text": "El Foso: 68/100 · MANTENER con vigilancia alta. Estructura 31/35, momentum 11/25, distancia técnica 18/20, catalizadores 8/20. Sigue siendo la mejor relación riesgo/recompensa de las cuatro: monopolios estructurales que capturan margen en cualquier escenario de demanda de IA, y ya corrigieron en promedio −36% desde máximos."
+          },
+          {
+            "text": "Lo importante de esta semana no es el número de la caída, sino que la corrección dejó de ser solo de valoración: el mismo desequilibrio que enriqueció a la memoria ahora está destruyendo el mercado de consumo que alimenta a los diseñadores. Es un mecanismo autorreversivo clásico de un commodity en pico de ciclo."
+          }
+        ]
+      }
+    ],
+    "opinion": "Mi caso base es un mercado de dos velocidades, no un rebote limpio: la demanda de IA en centros de datos sigue fuerte y limitada por oferta (favorece memoria, fundición y equipos), mientras el segmento B2C de PCs y teléfonos sufre una destrucción de demanda por el precio de la memoria. Eso castiga más a los diseñadores expuestos al consumidor (INTC, AMD, QCOM) que a los proveedores del foso. La corrección puede seguir mientras no se aclare si el superciclo de memoria se sostiene o empieza a revertir (Kioxia ya anticipó desaceleración del alza de precios NAND).",
+    "scenarios": [
+      {
+        "name": "Bajista",
+        "probability": 40,
+        "range": "−20% a −30%",
+        "driver": "La destrucción de demanda B2C se profundiza, los precios de memoria revierten desde el pico y el temor al capex de IA se traduce en recortes de inversión de los hyperscalers."
+      },
+      {
+        "name": "Base",
+        "probability": 40,
+        "range": "−8% a +8%",
+        "driver": "La escasez de memoria sostiene a SNDK/MU, la demanda de data center sigue restringida por oferta y el sector consolida en múltiplos más bajos mientras las utilidades aguantan."
+      },
+      {
+        "name": "Alcista",
+        "probability": 20,
+        "range": "+15% a +30%",
+        "driver": "El estrangulamiento de memoria se relaja lo suficiente para recuperar PCs, el capex de IA reacelera y las revisiones de utilidades vuelven a subir."
+      }
+    ],
+    "strategy": [
+      "No comprar el rebote del 27 de octubre, que ya fracasó: la caída del 2 de noviembre lo anuló. Exigir más de una semana de amplitud positiva antes de sumar exposición.",
+      "En Momentum, la tesis se rompió específicamente en Intel: separar y revisar la posición de diseñadores expuestos a PC; mantenerla como satélite especulativo pequeño con límite de riesgo duro, nunca como núcleo.",
+      "El Foso demostró ser el refugio relativo dentro del riesgo (−2,5% vs −16,1%): vigilar que la debilidad del capex de IA no llegue a las órdenes de equipos, su principal riesgo.",
+      "Revisar semanalmente la dirección de los precios de memoria (ASP NAND/DRAM) y si los ETF de semiconductores forman un mínimo creciente; sin eso, no asumir que la corrección terminó."
+    ],
+    "watchlist": [
+      "Qualcomm (4 de noviembre): ¿confirma que 'los teléfonos tocaron fondo' o admite que la memoria sigue encareciendo los celulares?",
+      "Nvidia (mediados de noviembre): ¿el capex de IA sigue intacto o los hyperscalers lo recortan tras sus caídas de flujo de caja?",
+      "Precios de memoria: Kioxia ya anticipó desaceleración del ASP NAND y ChangXin mostró crecimiento más lento —¿primeras grietas del superciclo?",
+      "Intel: seguimiento de la guía de PCs (débil hasta H1-2027) y evidencia de que el ajuste de inventarios de PC toca fondo."
+    ],
+    "sources": [
+      {
+        "title": "CNBC · Intel y Amazon caen tras resultados (30-oct-2026)",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      },
+      {
+        "title": "CNBC · Resultados Q3 de Intel y guía débil (29-oct-2026)",
+        "url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html"
+      },
+      {
+        "title": "MarketScreener · Semiconductores: valoraciones en niveles de crisis",
+        "url": "https://uk.marketscreener.com/news/semiconductors-valuations-return-to-crisis-levels-ce785fdbd08df02c"
+      },
+      {
+        "title": "Yahoo Finance/TIKR · Qualcomm cae 11% por la advertencia de Intel",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/qualcomm-stock-fell-11-day-064448014.html"
+      },
+      {
+        "title": "Datos del radar · historial semanal de precios",
+        "url": "datos/historial_semanal.csv"
+      }
+    ],
+    "dataNote": "Snapshot del 2-nov-2026; 34/35 instrumentos con precio. Retornos de carteras = ponderación teórica de precio con pesos estáticos publicados en la página; sin dividendos ni comisiones. ^IPSA sin datos (HTTP 404).",
+    "disclaimer": "Opinión prospectiva y escenarios subjetivos (probabilidades expresadas como juicio, no certeza), no pronóstico ni asesoría financiera. Rangos hipotéticos para el portafolio modelo Momentum; no corresponden a resultados de una cuenta personal."
+  },
+  {
     "id": "2026-10-27",
     "date": "2026-10-27",
     "headline": "El rebote de un día no borra la corrección",
@@ -10,45 +181,117 @@
     "sessionLabel": "27 oct",
     "netLabel": "12–27 oct",
     "performance": [
-      {"name": "#1 · Apocalipsis de memoria", "windowReturn": -14.72, "sessionReturn": 7.28, "netReturn": -8.52},
-      {"name": "#2 · El foso (procesadores)", "windowReturn": -16.56, "sessionReturn": 4.77, "netReturn": -12.60},
-      {"name": "#3 · Momentum extremo", "windowReturn": -15.35, "sessionReturn": 6.86, "netReturn": -9.57},
-      {"name": "#4 · IA total", "windowReturn": -13.27, "sessionReturn": 6.19, "netReturn": -8.01}
+      {
+        "name": "#1 · Apocalipsis de memoria",
+        "windowReturn": -14.72,
+        "sessionReturn": 7.28,
+        "netReturn": -8.52
+      },
+      {
+        "name": "#2 · El foso (procesadores)",
+        "windowReturn": -16.56,
+        "sessionReturn": 4.77,
+        "netReturn": -12.6
+      },
+      {
+        "name": "#3 · Momentum extremo",
+        "windowReturn": -15.35,
+        "sessionReturn": 6.86,
+        "netReturn": -9.57
+      },
+      {
+        "name": "#4 · IA total",
+        "windowReturn": -13.27,
+        "sessionReturn": 6.19,
+        "netReturn": -8.01
+      }
     ],
     "scores": [
-      {"name": "#3 · Momentum extremo", "score": 63, "signal": "ESPECULATIVO", "breakdown": "Estructura 22/35 · momentum 15/25 · distancia técnica 15/20 · catalizadores 11/20", "note": "Concentración alta en un solo factor; mantenerla como satélite de alto riesgo, no como núcleo."},
-      {"name": "#2 · El foso", "score": 68, "signal": "MANTENER · VIGILANCIA ALTA", "breakdown": "Estructura 31/35 · momentum 12/25 · distancia técnica 17/20 · catalizadores 8/20", "note": "Mejor calidad estructural, pero el equipo de fabricación está expuesto al retraso de entregas y al ciclo de capex."}
+      {
+        "name": "#3 · Momentum extremo",
+        "score": 63,
+        "signal": "ESPECULATIVO",
+        "breakdown": "Estructura 22/35 · momentum 15/25 · distancia técnica 15/20 · catalizadores 11/20",
+        "note": "Concentración alta en un solo factor; mantenerla como satélite de alto riesgo, no como núcleo."
+      },
+      {
+        "name": "#2 · El foso",
+        "score": 68,
+        "signal": "MANTENER · VIGILANCIA ALTA",
+        "breakdown": "Estructura 31/35 · momentum 12/25 · distancia técnica 17/20 · catalizadores 8/20",
+        "note": "Mejor calidad estructural, pero el equipo de fabricación está expuesto al retraso de entregas y al ciclo de capex."
+      }
     ],
     "sections": [
       {
         "heading": "Qué ocurrió y por qué importa",
         "paragraphs": [
-          {"text": "La señal más útil no fue un titular de demanda débil, sino la diferencia entre ventas récord y capacidad de entrega. Investing.com reportó que Lam Research registró US$8.22 mil millones de ingresos en su trimestre de septiembre, +54% interanual, y EPS de US$2.20; aun así, la guía de diciembre quedó limitada por escasez de componentes y parte de los envíos se trasladaría a marzo.", "sources": [1]},
-          {"text": "La presión en equipos fue real: Trefis calculó que LRCX cayó 24,7% en el mes hasta el 26 de octubre —frente a −0,8% del S&P 500— y estaba 45,1% bajo su máximo del 30 de junio.", "sources": [2]},
-          {"text": "Mi lectura: el mercado está penalizando la ejecución, el calendario del capex y las valoraciones exigentes. Los datos disponibles no prueban que la demanda de IA haya colapsado; sí muestran que demanda alta no garantiza entregas inmediatas ni retornos bursátiles lineales.", "sources": [1]}
+          {
+            "text": "La señal más útil no fue un titular de demanda débil, sino la diferencia entre ventas récord y capacidad de entrega. Investing.com reportó que Lam Research registró US$8.22 mil millones de ingresos en su trimestre de septiembre, +54% interanual, y EPS de US$2.20; aun así, la guía de diciembre quedó limitada por escasez de componentes y parte de los envíos se trasladaría a marzo.",
+            "sources": [
+              1
+            ]
+          },
+          {
+            "text": "La presión en equipos fue real: Trefis calculó que LRCX cayó 24,7% en el mes hasta el 26 de octubre —frente a −0,8% del S&P 500— y estaba 45,1% bajo su máximo del 30 de junio.",
+            "sources": [
+              2
+            ]
+          },
+          {
+            "text": "Mi lectura: el mercado está penalizando la ejecución, el calendario del capex y las valoraciones exigentes. Los datos disponibles no prueban que la demanda de IA haya colapsado; sí muestran que demanda alta no garantiza entregas inmediatas ni retornos bursátiles lineales.",
+            "sources": [
+              1
+            ]
+          }
         ]
       },
       {
         "heading": "Qué muestran las carteras agresivas",
         "paragraphs": [
-          {"text": "Los retornos son cálculos teóricos de precio, con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones, rebalanceos ni representan una cuenta personal. Entre el 12 y el 26 de octubre, Momentum cayó 15,35%; el 27 rebotó 6,86%, y quedó −9,57% frente al 12. Su mezcla es 20% cada una en SNDK, DELL, MU, INTC y MRVL: cinco nombres muy expuestos al mismo ciclo de semiconductores y memoria."},
-          {"text": "El Foso fue el más golpeado en esa ventana: −16,56% hasta el 26 y +4,77% el 27, para −12,60% neto. La exposición a equipos (KLAC, AMAT y LRCX) fue especialmente vulnerable a las restricciones de suministro. La cartera IA Total fue la menos dañada en la muestra (−8,01% neto), pero tampoco es defensiva: sus posiciones siguen correlacionadas con el gasto en IA."},
-          {"text": "El cesto Momentum conserva un YTD teórico ponderado de +233,53% y está aproximadamente 29,46% bajo los máximos de 52 semanas de sus componentes. Eso describe momentum y volatilidad; no demuestra que esté barato. El descuento frente al máximo no equivale a una valoración atractiva."}
+          {
+            "text": "Los retornos son cálculos teóricos de precio, con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones, rebalanceos ni representan una cuenta personal. Entre el 12 y el 26 de octubre, Momentum cayó 15,35%; el 27 rebotó 6,86%, y quedó −9,57% frente al 12. Su mezcla es 20% cada una en SNDK, DELL, MU, INTC y MRVL: cinco nombres muy expuestos al mismo ciclo de semiconductores y memoria."
+          },
+          {
+            "text": "El Foso fue el más golpeado en esa ventana: −16,56% hasta el 26 y +4,77% el 27, para −12,60% neto. La exposición a equipos (KLAC, AMAT y LRCX) fue especialmente vulnerable a las restricciones de suministro. La cartera IA Total fue la menos dañada en la muestra (−8,01% neto), pero tampoco es defensiva: sus posiciones siguen correlacionadas con el gasto en IA."
+          },
+          {
+            "text": "El cesto Momentum conserva un YTD teórico ponderado de +233,53% y está aproximadamente 29,46% bajo los máximos de 52 semanas de sus componentes. Eso describe momentum y volatilidad; no demuestra que esté barato. El descuento frente al máximo no equivale a una valoración atractiva."
+          }
         ]
       },
       {
         "heading": "Criterio propio: calidad frente a riesgo de concentración",
         "paragraphs": [
-          {"text": "Momentum extremo: 63/100 · ESPECULATIVO. Estructura 22/35, momentum 15/25, distancia técnica 15/20, catalizadores 11/20. El YTD sigue fuerte, pero la caída reciente y la concentración en un solo factor impiden tratarlo como cartera núcleo."},
-          {"text": "El Foso: 68/100 · MANTENER con vigilancia alta. Estructura 31/35, momentum 12/25, distancia técnica 17/20, catalizadores 8/20. Tiene mejores barreras competitivas, pero el tramo de equipos puede sufrir aunque la tesis de IA siga intacta; no es un refugio ni una compra automática."}
+          {
+            "text": "Momentum extremo: 63/100 · ESPECULATIVO. Estructura 22/35, momentum 15/25, distancia técnica 15/20, catalizadores 11/20. El YTD sigue fuerte, pero la caída reciente y la concentración en un solo factor impiden tratarlo como cartera núcleo."
+          },
+          {
+            "text": "El Foso: 68/100 · MANTENER con vigilancia alta. Estructura 31/35, momentum 12/25, distancia técnica 17/20, catalizadores 8/20. Tiene mejores barreras competitivas, pero el tramo de equipos puede sufrir aunque la tesis de IA siga intacta; no es un refugio ni una compra automática."
+          }
         ]
       }
     ],
     "opinion": "Mi caso base para Momentum es una recuperación irregular, no un rebote vertical: durante los próximos 3–6 meses veo más probable un mercado lateral-volátil con sesgo apenas positivo que una continuación limpia del rally. Mantengo un sesgo cauteloso hasta que mejoren las entregas y las guías; el riesgo de otra caída relevante sigue alto.",
     "scenarios": [
-      {"name": "Bajista", "probability": 35, "range": "−25% a −35%", "driver": "Se prolongan las restricciones, se retrasan inversiones de clientes o el mercado recorta múltiplos de crecimiento."},
-      {"name": "Base", "probability": 45, "range": "−5% a +12%", "driver": "La demanda se mantiene, los envíos diferidos se recuperan gradualmente y el sector oscila mientras demuestra beneficios."},
-      {"name": "Alcista", "probability": 20, "range": "+20% a +35%", "driver": "Se despejan los cuellos de botella, se confirman presupuestos de capex y las revisiones de utilidades vuelven a subir."}
+      {
+        "name": "Bajista",
+        "probability": 35,
+        "range": "−25% a −35%",
+        "driver": "Se prolongan las restricciones, se retrasan inversiones de clientes o el mercado recorta múltiplos de crecimiento."
+      },
+      {
+        "name": "Base",
+        "probability": 45,
+        "range": "−5% a +12%",
+        "driver": "La demanda se mantiene, los envíos diferidos se recuperan gradualmente y el sector oscila mientras demuestra beneficios."
+      },
+      {
+        "name": "Alcista",
+        "probability": 20,
+        "range": "+20% a +35%",
+        "driver": "Se despejan los cuellos de botella, se confirman presupuestos de capex y las revisiones de utilidades vuelven a subir."
+      }
     ],
     "strategy": [
       "No tomar la sesión del 27 de octubre como señal suficiente para aumentar Momentum; exigir confirmación en más de una semana y en las próximas guías de resultados.",
@@ -62,9 +305,18 @@
       "Amplitud del mercado: memoria, diseñadores, equipos y ETFs deben dejar de caer en bloque para confirmar una recuperación sectorial."
     ],
     "sources": [
-      {"title": "Investing.com · resultados de Lam y presión de suministro", "url": "https://www.investing.com/news/stock-market-news/why-is-lam-research-stock-sliding-today-93CH-4965056"},
-      {"title": "Trefis · caída de LRCX frente al mercado, al 26-oct-2026", "url": "https://www.trefis.com/stock/lrcx/articles/620735/lam-research-stock-is-45-below-its-high-how-deep-have-past-drops-gone/2026-10-27"},
-      {"title": "Datos del radar · historial semanal de precios", "url": "datos/historial_semanal.csv"}
+      {
+        "title": "Investing.com · resultados de Lam y presión de suministro",
+        "url": "https://www.investing.com/news/stock-market-news/why-is-lam-research-stock-sliding-today-93CH-4965056"
+      },
+      {
+        "title": "Trefis · caída de LRCX frente al mercado, al 26-oct-2026",
+        "url": "https://www.trefis.com/stock/lrcx/articles/620735/lam-research-stock-is-45-below-its-high-how-deep-have-past-drops-gone/2026-10-27"
+      },
+      {
+        "title": "Datos del radar · historial semanal de precios",
+        "url": "datos/historial_semanal.csv"
+      }
     ],
     "dataNote": "Snapshot del 27-oct-2026; 34/35 instrumentos con precio. Los retornos de carteras son ponderaciones teóricas calculadas desde historial_semanal.csv. ^IPSA no tuvo datos.",
     "disclaimer": "Opinión prospectiva y escenarios subjetivos, no pronóstico ni asesoría financiera. Rangos hipotéticos para el portafolio modelo Momentum; no corresponden a resultados de una cuenta personal."

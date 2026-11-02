@@ -1,5 +1,17 @@
 # Evolución semanal del mercado
 
+## Semana del 2026-11-02
+
+- Dirección general: **risk-off / corrección aguda** — los semis revirtieron con fuerza el rebote del 27-oct; Intel −28,6% en el día (peor jornada desde 1974).
+- Top bajadores por precio (27-oct→2-nov): INTC −29,6%, MRVL −18,8%, DELL −15,7%, SNDK −11,2%, AMD −9,9%.
+- Únicos en verde: USO +3,3%, KLAC +2,9%, XLE +2,5%, VDE +2,5%, XBI +1,3%.
+- Bajadores por retorno YTD (pp): INTC −70,1, DELL −61,6, SNDK −52,8, MRVL −51,0, AMD −24,7.
+- Notable: Intel guió Q4 US$15–16 mil M vs US$17,1 mil M esperado; el encarecimiento de la memoria encarece PCs y destruye demanda B2C.
+- Notable: la cartera Momentum cayó −16,1% en la semana (INTC es 20% del cesto); El Foso resistió −2,5% (KLAC al alza).
+- Notable: la corrección dejó de ser solo de valoración — el mismo superciclo de memoria que impulsó a SNDK/MU ahora golpea a los diseñadores expuestos a PC (INTC/AMD/QCOM).
+- Lectura: mercado de dos velocidades — memoria/fundición/equipos aguantan, diseñadores expuestos a consumo sufren; energía cierra en verde.
+- Nota técnica: ^IPSA sin datos (HTTP 404); 34/35 instrumentos del radar con datos.
+
 ## Semana del 2026-10-27
 
 - Dirección general: **risk-on** — rally amplio en semiconductores/IA y en toda la cadena de chips, con energía y materias primas en rojo.
