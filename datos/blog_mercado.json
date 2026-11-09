@@ -1,5 +1,180 @@
 [
   {
+    "id": "2026-11-09",
+    "date": "2026-11-09",
+    "headline": "El catalizador se volvió político: las midterms hundieron a los semis (−12% en un día) y El Foso dejó de ser refugio",
+    "kicker": "BITÁCORA · SEMICONDUCTORES Y CARTERAS DE ALTO RIESGO",
+    "stance": "Corrección profunda · rebote técnico de un día no confirmado · risk-off",
+    "summary": "El 5 de noviembre, tras el triunfo demócrata en las elecciones de mitad de mandato de EE.UU., el índice Philadelphia Semiconductor (SOX) se desplomó ~12% —su peor jornada desde abril de 2025— ante el temor a una regulación más dura de los centros de datos de IA. El viernes 6 rebotó con fuerza (AMD +11%, INTC +8%), pero la semana fue profundamente negativa: Momentum cayó 22,9% y, por primera vez, El Foso (−11,1%) dejó de ser refugio. La memoria volvió a sangrar (STX −28,5%, MRVL −28,1%, WDC −28,0%, SNDK −27,4%) mientras Kioxia confirmó que el alza de precios NAND se enfría.",
+    "windowLabel": "12 oct → 2 nov",
+    "sessionLabel": "2 nov → 9 nov",
+    "netLabel": "12 oct → 9 nov",
+    "performance": [
+      {
+        "name": "#1 · Apocalipsis de memoria",
+        "windowReturn": -15.92,
+        "sessionReturn": -24.1,
+        "netReturn": -36.16
+      },
+      {
+        "name": "#2 · El foso (procesadores)",
+        "windowReturn": -15.04,
+        "sessionReturn": -11.08,
+        "netReturn": -24.29
+      },
+      {
+        "name": "#3 · Momentum extremo",
+        "windowReturn": -24.1,
+        "sessionReturn": -22.91,
+        "netReturn": -41.64
+      },
+      {
+        "name": "#4 · IA total",
+        "windowReturn": -17.11,
+        "sessionReturn": -15.57,
+        "netReturn": -29.54
+      }
+    ],
+    "scores": [
+      {
+        "name": "#3 · Momentum extremo",
+        "score": 54,
+        "signal": "CORREGIR / ESPERAR",
+        "breakdown": "Estructura 22/35 · momentum 8/25 · distancia técnica 19/20 · catalizadores 5/20",
+        "note": "Bajó desde 56: dos semanas seguidas de caída (−16,1% y −22,9%) quebraron el momentum y el catalizador de memoria se enfrió (Kioxia). Estar −54,4% bajo el máximo promedio NO lo hace barato: el cesto sigue +116% YTD ponderado."
+      },
+      {
+        "name": "#2 · El foso",
+        "score": 67,
+        "signal": "MANTENER · VIGILANCIA ALTA",
+        "breakdown": "Estructura 31/35 · momentum 10/25 · distancia técnica 19/20 · catalizadores 7/20",
+        "note": "Bajó desde 68: su ventaja defensiva se redujo esta semana (−11,1% vs −22,9% de Momentum sigue siendo mejor, pero ya no es refugio). La rotación política golpeó también a equipos y fundición; la tesis del foso estructural sigue intacta."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Qué ocurrió y por qué importa",
+        "paragraphs": [
+          {
+            "text": "El catalizador dejó de ser la memoria y pasó a ser político. El triunfo demócrata en las elecciones de mitad de mandato de EE.UU. encendió la venta: los inversores temen una regulación más dura de los centros de datos de IA. El jueves 5 de noviembre el índice Philadelphia Semiconductor se desplomó en su peor caída de un día desde abril de 2025, y Nvidia vivió su peor jornada desde enero de 2025, cuando el modelo chino DeepSeek golpeó al mercado.",
+            "sources": [
+              1,
+              3
+            ]
+          },
+          {
+            "text": "El viernes 6 hubo rebote, no recuperación. Los semiconductores subieron tras la peor venta del sector en seis años: AMD cerró +11% e Intel +8%, y Micron +5%. Aun así, los tres principales índices de EE.UU. cerraron la semana en negativo: la sesión del viernes solo recuperó parte del desplome del jueves.",
+            "sources": [
+              1,
+              2
+            ]
+          },
+          {
+            "text": "En paralelo, la memoria mostró señales mixtas. Kioxia (NAND) guio que su ingreso crecerá solo ~1% secuencial en el trimestre de diciembre, justo después de un salto de 40% del trimestre de junio al de septiembre: el ritmo de alzas de precio NAND se está enfriando. Pero Apple envió la señal contraria: su CEO John Ternus dijo que ve los precios de memoria subir más allá de diciembre y calificó el nivel actual de \"sin precedentes\". Dos lecturas que conviene separar antes de declarar muerto el superciclo.",
+            "sources": [
+              4
+            ]
+          },
+          {
+            "text": "Nota técnica: el ETF iShares Semiconductor (SOXX) ejecutó un split 3:1, con cotización ajustada desde el 5 de noviembre. Por eso el precio bruto en el radar cae de US$471 (2-nov) a US$136 (9-nov): es el split, no un desplome real. En esta bitácora los retornos de cartera ya se calculan con SOXX ajustado por split.",
+            "sources": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Qué muestran las carteras agresivas",
+        "paragraphs": [
+          {
+            "text": "Los retornos son cálculos teóricos de precio con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones ni rebalanceos y no representan una cuenta personal. Entre el 2 y el 9 de noviembre Momentum cayó 22,91%, su peor semana del año, y desde el 12 de octubre acumula −41,64%. Su mezcla es 20% en cada uno de SNDK, DELL, MU, INTC y MRVL: cinco nombres que volvieron a caer juntos (−22% a −28% cada uno)."
+          },
+          {
+            "text": "El Foso perdió su papel de refugio. Cayó 11,08% en la semana —mejor que el −22,91% de Momentum, pero ya no en verde— porque la rotación política golpeó también a equipos y fundición (ASML −9,0%, TSM −7,6%, KLAC −12,3%, AMAT −14,7%, LRCX −16,2%). IA Total cayó 15,57% y Apocalipsis de memoria 24,10%."
+          },
+          {
+            "text": "El cesto Momentum conserva un YTD teórico ponderado de +116% pero sus cinco componentes están en promedio −54,4% bajo sus máximos de 52 semanas (SNDK −64,5%, INTC −60,5%, MRVL −57,2%). Ese descuento describe cuánto corrió antes, no una valoración atractiva: un nombre que subió +203% y cae −64% desde el techo sigue muy lejos de ser barato en términos de lo que el mercado ya pagó."
+          }
+        ]
+      },
+      {
+        "heading": "Criterio propio: la corrección ya no es solo de valoración",
+        "paragraphs": [
+          {
+            "text": "Momentum extremo: 54/100 · CORREGIR/ESPERAR (bajó desde 56). Estructura 22/35, momentum 8/25, distancia técnica 19/20, catalizadores 5/20. La tesis de perseguir a los ganadores de 2026 se rompió en dos frentes a la vez: la memoria se enfría (Kioxia) y apareció un riesgo político nuevo (regulación de data centers). La distancia técnica sube porque el precio cayó, no porque el riesgo haya bajado."
+          },
+          {
+            "text": "El Foso: 67/100 · MANTENER con vigilancia alta (bajó desde 68). Estructura 31/35, momentum 10/25, distancia técnica 19/20, catalizadores 7/20. Sus monopolios estructurales (ASML, TSMC, KLA) siguen capturando margen, pero esta semana quedó claro que no son inmunes al sentimiento político. El riesgo principal sigue siendo que la regulación de data centers llegue a las órdenes de equipos."
+          },
+          {
+            "text": "La novedad de esta semana no es la caída, sino que el mercado cambió de catalizador: de \"los precios de memoria estrangulan al consumo\" a \"la política puede frenar el capex de IA\". La demanda real sigue fuerte —AMD creció 97% en data center—, así que el problema es de calendario y de múltiplos, no de demanda. Eso es lo que convierte el rebote del viernes en una señal insuficiente por sí sola."
+          }
+        ]
+      }
+    ],
+    "opinion": "Mi caso base es una corrección que se extiende mientras el mercado digiere dos incertidumbres nuevas: el riesgo regulatorio de los data centers de IA (poco cuantificable) y el enfriamiento del alza de precios de memoria (Kioxia). La demanda real de IA sigue intacta —AMD creció 97% en data center y su guía del cuarto trimestre superó al consenso— y la escasez de NAND se mantendría hasta 2027 según Kioxia. Por eso no tomo el rebote del viernes 6 como confirmación de suelo: exigiría que la amplitud positiva se sostenga más de una semana y que los ETF del sector formen un mínimo creciente antes de considerar que la corrección terminó.",
+    "scenarios": [
+      {
+        "name": "Bajista",
+        "probability": 40,
+        "range": "−20% a −35%",
+        "driver": "La regulación de centros de datos se materializa y enfría el capex de IA; los precios de memoria revierten desde el techo (Kioxia es la primera grieta) y el rebote del viernes falla."
+      },
+      {
+        "name": "Base",
+        "probability": 40,
+        "range": "−8% a +12%",
+        "driver": "La escasez de memoria persiste hasta 2027 (Kioxia y Apple apuntan a precios altos), el capex de data center se mantiene y el susto regulatorio se absorbe sin recortes reales de inversión."
+      },
+      {
+        "name": "Alcista",
+        "probability": 20,
+        "range": "+15% a +30%",
+        "driver": "El temor regulatorio se revela exagerado (los estados compiten por albergar data centers), los precios de memoria se sostienen y las utilidades de AMD y los equipos arrastran revisiones al alza."
+      }
+    ],
+    "strategy": [
+      "No validar el rebote del viernes 6 como cambio de tendencia: una sesión no confirma nada tras dos semanas de caída. Exigir amplitud positiva sostenida y que SOXX/SMH formen un mínimo creciente.",
+      "En Momentum, la tesis se rompió en dos frentes (memoria enfriándose + riesgo regulatorio). Mantenerla solo como satélite especulativo con límite de riesgo duro; no promediar a la baja por sistema.",
+      "El Foso ya no es refugio: la rotación política golpeó a equipos y fundición. Vigilar que el riesgo de regulación de data centers no llegue a las órdenes de equipos (ASML, KLAC, AMAT, LRCX), su principal riesgo.",
+      "Separar señal de ruido en memoria: Apple (comprando más caro) frente a Kioxia (precios enfriándose). Seguir el ASP NAND/DRAM trimestral como termómetro real del superciclo."
+    ],
+    "watchlist": [
+      "Confirmación del rebote: ¿SOXX/SMH forman un mínimo creciente o el rebote del 6-nov se revierte esta semana?",
+      "Regulación de data centers: detalles de la agenda demócrata y si algún estado 'se descuelga' para atraer centros de datos de IA.",
+      "Precios de memoria: próxima guía de Micron (¿confirma o desmiente la desaceleración de Kioxia?) y el ASP NAND/DRAM del cuarto trimestre.",
+      "Nvidia: la investigación interna tras la controversia de su CEO y su impacto en la confianza del complejo de IA."
+    ],
+    "sources": [
+      {
+        "title": "Business Standard/Reuters · rebote de chips tras la venta por las midterms",
+        "url": "https://www.business-standard.com/markets/news/wall-street-rebounds-as-chip-stocks-rally-after-heavy-ai-related-selloff-126110700047_1.html"
+      },
+      {
+        "title": "MarketWatch · rebote de chips, la peor venta del sector en seis años",
+        "url": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533"
+      },
+      {
+        "title": "Yahoo Finance · AMD récord y el catalizador de las midterms",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amd-soars-10-intel-7-163712369.html"
+      },
+      {
+        "title": "Motley Fool · Apple pagará más por memoria; Kioxia guía plano",
+        "url": "https://fool.com/investing/2026/11/03/apple-says-it-will-keep-paying-more-for-memory-chips-after-december-that-s-good-news-for-micron-stock"
+      },
+      {
+        "title": "SEC Form 497 · split 3:1 del iShares Semiconductor ETF (SOXX)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526361162/d133118d497.htm"
+      },
+      {
+        "title": "Datos del radar · historial semanal de precios",
+        "url": "datos/historial_semanal.csv"
+      }
+    ],
+    "dataNote": "Snapshot del 9-nov-2026 (datos al cierre del 6-nov); 34/35 instrumentos con precio. Retornos de carteras = ponderación teórica de precio con pesos estáticos publicados en la página; sin dividendos ni comisiones. SOXX ajustado por split 3:1 (ex 5-nov). ^IPSA sin datos (HTTP 404).",
+    "disclaimer": "Opinión prospectiva y escenarios subjetivos (probabilidades expresadas como juicio, no certeza), no pronóstico ni asesoría financiera. Rangos hipotéticos para el portafolio modelo Momentum; no corresponden a resultados de una cuenta personal."
+  },
+  {
     "id": "2026-11-02",
     "date": "2026-11-02",
     "headline": "El superciclo de memoria se muerde la cola: los precios que subieron a SanDisk +318% acaban de hundir a Intel",

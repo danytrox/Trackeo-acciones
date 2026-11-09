@@ -1,5 +1,18 @@
 # Evolución semanal del mercado
 
+## Semana del 2026-11-09
+
+- Dirección general: **risk-off profundo** — las midterms demócratas hundieron al SOX ~12% en un día (peor desde abril 2025); el rebote técnico del viernes 6 aún no confirma suelo.
+- Catalizador: temor a regulación de data centers de IA tras el triunfo demócrata; la corrección dejó de ser solo de valoración o de precios de memoria.
+- Top bajadores por precio (2-nov→9-nov): STX −28,5%, MRVL −28,1%, WDC −28,0%, SNDK −27,4%, DELL −22,6%.
+- Únicos en verde (4 de 34): LTM.SN +13,9%, BSANTANDER.SN +4,0%, CHILE.SN +3,3%, QCOM +0,4%.
+- Bajadores por retorno YTD (pp): SNDK −114,8, DELL −74,9, STX −63,9, MU −61,7, MRVL −61,7.
+- Notable: El Foso dejó de ser refugio (−11,1% en la semana vs −22,9% de Momentum); la rotación política golpeó también a equipos y fundición.
+- Notable: Kioxia guió ingreso plano (+1% sec) en el trimestre de diciembre —primera grieta clara del superciclo NAND—; Apple, en contra, ve la memoria siguiendo cara.
+- Notable: SOXX ejecutó split 3:1 (ex 5-nov): el precio bruto cae de US$471 a US$136 por el split, no por desplome real; los retornos de cartera ya están ajustados.
+- Lectura: la demanda real de IA sigue intacta (AMD +97% en data center, guía récord de US$17 mil M), pero el mercado descuenta ahora riesgo político y enfriamiento de memoria.
+- Nota técnica: ^IPSA sin datos (HTTP 404); 34/35 instrumentos del radar con datos.
+
 ## Semana del 2026-11-02
 
 - Dirección general: **risk-off / corrección aguda** — los semis revirtieron con fuerza el rebote del 27-oct; Intel −28,6% en el día (peor jornada desde 1974).
