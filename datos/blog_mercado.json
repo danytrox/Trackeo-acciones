@@ -1,5 +1,178 @@
 [
   {
+    "id": "2026-11-16",
+    "date": "2026-11-16",
+    "headline": "El rebote llegó con una excepción llamada Nvidia: la renuncia de Jensen Huang partió el mercado en dos",
+    "kicker": "BITÁCORA · SEMICONDUCTORES Y CARTERAS DE ALTO RIESGO",
+    "stance": "Rebote amplio no confirmado · risk-on con excepción Nvidia · sesgo cauteloso",
+    "summary": "La semana del 9 al 16 de noviembre fue un rebote amplio: 29 de 34 instrumentos cerraron en verde y las cuatro carteras modelo quedaron positivas por primera vez tras dos semanas de caídas. Lideraron la memoria y los equipos (AMD +18,9%, STX +14,6%, MU +12,8%, LRCX +12,7%, WDC +12,1%). Pero Nvidia fue la gran excepción: cayó 12,8% en la semana —su sexta caída semanal consecutiva, la peor racha desde 2012— y perdió US$1,7 billones de valor desde octubre, después de que su fundador y CEO Jensen Huang renunciara el jueves en medio de un escándalo de affaires, uno de ellos con una presunta espía china. El viernes la crisis se profundizó y arrastró a todo el sector (AMD −8,75% en el día, Dell −8%), revirtiendo parte del rebote.",
+    "windowLabel": "12 oct → 9 nov",
+    "sessionLabel": "9 nov → 16 nov",
+    "netLabel": "12 oct → 16 nov",
+    "performance": [
+      {
+        "name": "#1 · Apocalipsis de memoria",
+        "windowReturn": -36.16,
+        "sessionReturn": 9.63,
+        "netReturn": -30.01
+      },
+      {
+        "name": "#2 · El foso (procesadores)",
+        "windowReturn": -24.29,
+        "sessionReturn": 8.29,
+        "netReturn": -18.01
+      },
+      {
+        "name": "#3 · Momentum extremo",
+        "windowReturn": -41.64,
+        "sessionReturn": 8.14,
+        "netReturn": -36.89
+      },
+      {
+        "name": "#4 · IA total",
+        "windowReturn": -29.54,
+        "sessionReturn": 4.48,
+        "netReturn": -26.39
+      }
+    ],
+    "scores": [
+      {
+        "name": "#3 · Momentum extremo",
+        "score": 56,
+        "signal": "ESPECULATIVO · REBOTE SIN CONFIRMAR",
+        "breakdown": "Estructura 22/35 · momentum 10/25 · distancia técnica 19/20 · catalizadores 5/20",
+        "note": "Sube desde 54 por el rebote de la semana (+8,14%), pero sigue sin confirmar: acumula −36,9% desde el 12-oct, el viernes revirtió parte de la subida y un componente (Dell, 20%) quedó expuesto al escándalo de servidores H800 en Shanghái. Estar −50,6% bajo el máximo promedio NO lo hace barato: el cesto sigue +133% YTD ponderado."
+      },
+      {
+        "name": "#2 · El foso",
+        "score": 68,
+        "signal": "MANTENER · VIGILANCIA ALTA",
+        "breakdown": "Estructura 31/35 · momentum 11/25 · distancia técnica 18/20 · catalizadores 8/20",
+        "note": "Sube desde 67: la semana validó su tesis central. Mientras Nvidia caía y AMD/Broadcom rotaban, los equipos y la fundición —que venden a todos sin importar quién gane— lideraron el rebote (LRCX +12,7%, AMAT +11,4%, KLAC +10,0%). Riesgo nuevo a vigilar: que el escrutinio de exportaciones a China llegue a ASML/equipos."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Qué ocurrió y por qué importa",
+        "paragraphs": [
+          {
+            "text": "El catalizador de la semana fue la caída en solitario de Nvidia. Jensen Huang, que cofundó la empresa y la dirigió 33 años, renunció como CEO y miembro del directorio el jueves 12 después de que se hicieran públicas dos relaciones extramatrimoniales: una con una presunta espía china y otra con una empleada. La acción cerró su sexta semana consecutiva de caídas —la peor racha desde 2012— y acumula una pérdida de US$1,7 billones de valor desde principios de octubre. El directorio nombró a la CFO Colette Kress CEO interina.",
+            "sources": [
+              1,
+              2
+            ]
+          },
+          {
+            "text": "El viernes 13 la crisis se profundizó y arrastró al resto del sector. Bloomberg reportó que 22 servidores construidos por Dell y cargados con chips H800 restringidos terminaron en un centro de datos de Shanghái vinculado a una empresa fundada por Alice Huang (la presunta espía). Dell cayó 8% en el día y la toma de ganancias se generalizó por el temor a controles de exportación más duros para toda la industria: AMD cerró −8,75% el viernes, revirtiendo cerca de un tercio de su rally de la semana.",
+            "sources": [
+              2,
+              3
+            ]
+          },
+          {
+            "text": "El rebote previo (lunes a jueves) fue real y de amplitud. AMD fue el mejor del S&P 100, con una subida de casi 45% en cinco sesiones desde US$404,40 (5-nov) hasta US$585,30 (jueves), mientras los inversores apostaban a que el vacío de liderazgo de Nvidia empujaría a sus clientes hacia su rival más cercano. Broadcom subió casi 18% en la semana. En nuestro radar la memoria y los equipos lideraron: STX +14,6%, MU +12,8%, LRCX +12,7%, WDC +12,1%, AMAT +11,4%.",
+            "sources": [
+              2,
+              3
+            ]
+          },
+          {
+            "text": "Lo que viene es el reporte de Nvidia del martes 17 de noviembre, su primera llamada de resultados sin Huang. Evercore recortó su precio objetivo de US$465 a US$186 —valorando a Nvidia como Apple en 2012— y nueve bancos bajaron sus objetivos tras la salida de Huang. Esa llamada definirá si la rotación desde Nvidia hacia AMD, Broadcom y los equipos fue una transferencia real de negocio o solo de sentimiento.",
+            "sources": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Qué muestran las carteras agresivas",
+        "paragraphs": [
+          {
+            "text": "Los retornos son cálculos teóricos de precio con los pesos publicados en esta página mantenidos fijos; no incluyen dividendos, comisiones ni rebalanceos y no representan una cuenta personal. Entre el 9 y el 16 de noviembre las cuatro carteras quedaron positivas por primera vez tras dos semanas de caídas: Apocalipsis de memoria +9,63%, El Foso +8,29%, Momentum +8,14% e IA Total +4,48%. Desde el 12 de octubre todas siguen en negativo, con Momentum −36,89% como la más castigada.",
+            "sources": [
+              3
+            ]
+          },
+          {
+            "text": "IA Total fue la más rezagada por una razón concreta: lleva 15% en Nvidia, el único nombre grande que cayó esta semana (−12,75%). Es la prueba de que la diversificación por capa no protege cuando el riesgo se concentra en una sola empresa. El Foso, en cambio, fue la mejor relación del rebote: su exposición a equipos y fundición capturó la rotación sin cargar con el riesgo Nvidia.",
+            "sources": [
+              3
+            ]
+          },
+          {
+            "text": "El cesto Momentum conserva un YTD teórico ponderado de +133% (SNDK +221,5%, DELL +169,6%, MU +146,8%), pero sus cinco componentes están en promedio −50,6% bajo sus máximos de 52 semanas. Ese descuento describe cuánto corrió antes, no una valoración atractiva: un nombre que subió +200% y cae −60% desde el techo sigue lejos de ser barato en términos de lo que el mercado ya pagó.",
+            "sources": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Criterio propio: la rotación validó el foso, no el momentum",
+        "paragraphs": [
+          {
+            "text": "Momentum extremo: 56/100 · ESPECULATIVO, rebote sin confirmar (sube desde 54). Estructura 22/35, momentum 10/25, distancia técnica 19/20, catalizadores 5/20. El rebote de la semana (+8,14% con 85% de amplitud) mejora el momentum, pero el viernes revirtió parte de la subida y apareció un riesgo nuevo y concreto: Dell (20% del cesto) quedó expuesta al escándalo de servidores H800 en Shanghái. La tesis de perseguir a los ganadores de 2026 sigue rota; el rebote no equivale a una confirmación de suelo."
+          },
+          {
+            "text": "El Foso: 68/100 · MANTENER con vigilancia alta (sube desde 67). Estructura 31/35, momentum 11/25, distancia técnica 18/20, catalizadores 8/20. Esta semana fue la demostración empírica de su tesis: mientras Nvidia caía y el dinero rotaba hacia AMD y Broadcom, los proveedores que venden a todos (ASML, TSMC, KLA, AMAT, LRCX) rebotaron con fuerza. El riesgo a vigilar es que el escrutinio de exportaciones a China se amplíe desde Nvidia hacia equipos y fundición, que también tienen exposición a ese mercado."
+          },
+          {
+            "text": "Revisión de la tesis previa: la semana pasada exigimos 'más de una semana de amplitud positiva' antes de considerar terminada la corrección, y advertimos que el rebote del viernes 6 no confirmaba nada. Esta semana el rebote sí duró cuatro sesiones y con amplitud real (29/34 en verde), pero se revirtió el viernes por un catalizador que no habíamos previsto —la crisis de gobernanza de Nvidia— y no por los riesgos que sí habíamos señalado (regulación de data centers, enfriamiento de memoria). La lección se mantiene: amplitud positiva es necesaria, pero no suficiente, cuando emerge un riesgo idiosincrático nuevo."
+          }
+        ]
+      }
+    ],
+    "opinion": "Mi caso base es un mercado de dos velocidades. La memoria y los equipos se recuperan sobre demanda real —la escasez de DRAM/NAND persiste y la rotación desde Nvidia hacia AMD y Broadcom sostiene la amplitud—, mientras Nvidia vive su propia crisis de gobernanza que, por ahora, golpea más a su propio múltiplo (11 veces ganancias forward, el más bajo en 15 años según HSBC) que a la demanda agregada de IA. El rebote de esta semana duró cuatro sesiones y se revirtió el viernes por la profundización del caso Huang, no por un deterioro de la demanda. Hasta que Nvidia reporte el 17 de noviembre (su primera llamada sin Huang) no tomo el rebote como confirmación de suelo: exijo que la amplitud positiva se sostenga y que el recorte del viernes no se repita.",
+    "scenarios": [
+      {
+        "name": "Bajista",
+        "probability": 40,
+        "range": "−25% a −40%",
+        "driver": "La crisis de Nvidia se contagia al complejo IA: los controles de exportación a China se amplían a equipos y servidores, Dell y los neoclouds recortan pedidos, y el rebote del viernes 13 falla llevando al momentum a nuevos mínimos."
+      },
+      {
+        "name": "Base",
+        "probability": 40,
+        "range": "−10% a +10%",
+        "driver": "Nvidia reporta utilidades sólidas el 17-nov y la transición con Kress es ordenada; la demanda de memoria sigue restringida por oferta y el sector consolida en un rango mientras digiere el riesgo de gobernanza sin recortes reales de inversión."
+      },
+      {
+        "name": "Alcista",
+        "probability": 20,
+        "range": "+15% a +30%",
+        "driver": "El caso Huang se resuelve sin dañar el negocio, la rotación desde Nvidia hacia AMD, Broadcom y los equipos se sostiene, y las revisiones de utilidades vuelven a subir con el capex de IA intacto."
+      }
+    ],
+    "strategy": [
+      "No validar el rebote como cambio de tendencia: duró cuatro sesiones y el viernes se revirtió por la crisis de Nvidia. Exigir amplitud positiva sostenida y que el recorte del viernes no se repita antes de sumar exposición.",
+      "En Momentum, el riesgo nuevo es Dell (20% del cesto): la revelación de servidores H800 en Shanghái la expone al escrutinio de exportaciones a China. Separar la tesis de memoria (MU/SNDK, demanda intacta) de la de Dell (riesgo regulatorio idiosincrático).",
+      "El Foso validó su tesis esta semana: mientras Nvidia caía y el dinero rotaba, los equipos y la fundición (que venden a todos) rebotaron. Mantenerlo como el núcleo de menor riesgo dentro del complejo; vigilar que el escrutinio de exportaciones no llegue a ASML/equipos.",
+      "Nvidia reporta el 17-nov sin Huang: es el catalizador que define si la rotación fue transferencia de negocio o solo de sentimiento. No asumir dirección antes del reporte."
+    ],
+    "watchlist": [
+      "Nvidia (17-nov): ¿la primera llamada sin Huang confirma la guía de crecimiento (+91% interanual estimado) o la crisis de gobernanza contamina la guía de 2027?",
+      "Controles de exportación: ¿el escándalo Alice Huang/Dell H800 lleva a EE.UU. a endurecer las ventas a China, con impacto en ASML, KLAC, AMAT y LRCX?",
+      "Rotación desde Nvidia: ¿AMD (+45% en cinco sesiones) y Broadcom sostienen la toma de cuota, o fue un repunte técnico que se deshace?",
+      "Precios de memoria: ¿la próxima guía de Micron confirma la escasez hasta 2027-2028, o Kioxia sigue enfriando el ASP NAND?"
+    ],
+    "sources": [
+      {
+        "title": "CNBC · Nvidia cae por sexta semana y pierde US$1,6 billones (13-nov-2026)",
+        "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
+      },
+      {
+        "title": "Benzinga · Resumen semanal: Nvidia cae, AMD y Broadcom toman la corona (13-nov-2026)",
+        "url": "https://www.benzinga.com/markets/market-summary/26/11/63269563/this-week-on-wall-street-nvidia-huang-amd-broadcom-fed-hike"
+      },
+      {
+        "title": "Datos del radar · historial semanal de precios",
+        "url": "datos/historial_semanal.csv"
+      }
+    ],
+    "dataNote": "Snapshot del 16-nov-2026 (precios al cierre del 13-nov); 34/35 instrumentos con precio. Retornos de carteras = ponderación teórica de precio con pesos estáticos publicados en la página; sin dividendos ni comisiones. ^IPSA sin datos (HTTP 404).",
+    "disclaimer": "Opinión prospectiva y escenarios subjetivos (probabilidades expresadas como juicio, no certeza), no pronóstico ni asesoría financiera. Rangos hipotéticos para el portafolio modelo Momentum; no corresponden a resultados de una cuenta personal."
+  },
+  {
     "id": "2026-11-09",
     "date": "2026-11-09",
     "headline": "El catalizador se volvió político: las midterms hundieron a los semis (−12% en un día) y El Foso dejó de ser refugio",

@@ -1,5 +1,19 @@
 # Evolución semanal del mercado
 
+## Semana del 2026-11-16
+
+- Dirección general: **rebote amplio no confirmado** — 29/34 instrumentos en verde y las cuatro carteras positivas por primera vez tras dos semanas de caídas, pero el viernes 13 se revirtió con fuerza.
+- Top subidores por precio (9-nov→16-nov): AMD +18,9%, STX +14,6%, MU +12,8%, LRCX +12,7%, WDC +12,1%.
+- Único grande en rojo: NVDA −12,8% — sexta semana consecutiva de caída (peor racha desde 2012) y −US$1,7 billones de valor desde octubre.
+- Catalizador: Jensen Huang renunció como CEO de Nvidia (jueves 12, efectiva inmediata; Kress CEO interina) tras dos affaires, uno con una presunta espía china (Alice Huang).
+- El viernes se profundizó: Bloomberg reportó 22 servidores Dell con chips H800 restringidos en un data center de Shanghái ligado a Alice Huang → DELL −8% y toma de ganancias sectorial (AMD −8,8%).
+- Subidores por retorno YTD (pp): AMD +38,1, MU +28,0, STX +23,4, SNDK +18,2, MRVL +17,4.
+- Notable: las cuatro carteras rebotaron (Memoria +9,6%, Foso +8,3%, Momentum +8,1%, IA Total +4,5%); IA Total la más rezagada por su 15% en NVDA.
+- Notable: la rotación validó la tesis del Foso — mientras Nvidia caía y AMD/Broadcom rotaban, equipos y fundición (que venden a todos) lideraron el rebote (LRCX +12,7%, AMAT +11,4%).
+- Lectura: mercado de dos velocidades — memoria/equipos sobre demanda real, Nvidia en crisis propia de gobernanza; Nvidia reporta el 17-nov (primera llamada sin Huang).
+- Nota técnica: ^IPSA sin datos (HTTP 404); 34/35 instrumentos con datos.
+
+
 ## Semana del 2026-11-09
 
 - Dirección general: **risk-off profundo** — las midterms demócratas hundieron al SOX ~12% en un día (peor desde abril 2025); el rebote técnico del viernes 6 aún no confirma suelo.
